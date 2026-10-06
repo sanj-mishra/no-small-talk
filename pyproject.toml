@@ -1,0 +1,21 @@
+[project]
+name = "no-small-talk"
+version = "0.1.0"
+description = "Does your security queue need an LLM? Routing synthetic security alerts through a rules baseline, JEV (decision-native), and Gemini (generative)."
+requires-python = ">=3.10"
+dependencies = [
+    "typesafe-sdk",
+    "google-genai",
+    "pydantic>=2",
+    "python-dotenv",
+]
+
+# Virtual project: uv manages a venv + deps, but does not build/install this as a package.
+[tool.uv]
+package = false
+# This dev machine runs an x86_64 Python (under Rosetta) with no working C/Rust toolchain.
+# Newer cryptography releases ship no x86_64 macOS wheel, so uv would try to compile and
+# fail. Constrain to a wheel-backed version and forbid source builds as a backstop.
+# (cryptography/cffi are transitive deps of google-genai via google-auth.)
+constraint-dependencies = ["cryptography<49"]
+no-build-package = ["cryptography", "cffi"]
