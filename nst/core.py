@@ -62,6 +62,20 @@ def valid_labels(teams: dict[str, str]) -> set[str]:
     return set(teams) | {REVIEW_LABEL}
 
 
+# The "abstain" option. The experiment runs two conditions that differ ONLY by whether this
+# option is offered: 'forced' (teams only) vs 'abstain' (teams + review). Everything else —
+# alert text, instruction, the other option descriptions, the gate — is held constant.
+REVIEW_OPTION_DESC = (
+    "Insufficient context to route: the alert is truncated, ambiguous, or lacks the detail "
+    "needed to assign an owner, and should be escalated to a human analyst."
+)
+
+
+def with_review(teams: dict[str, str]) -> dict[str, str]:
+    """Return the option set with the explicit review/abstain option appended."""
+    return {**teams, REVIEW_LABEL: REVIEW_OPTION_DESC}
+
+
 # --- The result contract ----------------------------------------------------------
 
 
@@ -83,6 +97,7 @@ class RouteResult:
     latency_s: Optional[float] = None
     input_tokens: Optional[int] = None
     output_tokens: Optional[int] = None
+    notes: Optional[str] = None            # e.g. a model's short reasoning, for demo/inspection
     error: Optional[str] = None
 
     def final(self, threshold: float = REVIEW_THRESHOLD) -> str:

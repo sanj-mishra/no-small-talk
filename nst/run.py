@@ -16,7 +16,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from .core import REVIEW_THRESHOLD, RouteResult, load_alerts, load_teams
+from .core import REVIEW_THRESHOLD, RouteResult, load_alerts, load_teams, with_review
 
 # Router registry. Each entry maps a system name to a factory(teams) -> router with
 # .route(alert) -> RouteResult. API-backed systems are added in later commits; importing
@@ -25,18 +25,24 @@ def _build_router(name: str, teams: dict):
     if name == "rules":
         from .rules import RulesRouter
         return RulesRouter(teams)
-    # --- added in later commits ---
-    # if name == "gemini": from .gemini_router import GeminiRouter; return GeminiRouter(teams)
-    # if name in ("jev", "jev-mock"): from .jev_router import JevRouter; return JevRouter(teams, mock=name=="jev-mock")
+    if name == "gemini":
+        from .gemini_router import GeminiRouter
+        return GeminiRouter(teams)
+    if name in ("jev", "jev-mock"):
+        from .jev_router import JevRouter
+        return JevRouter(teams, mock=(name == "jev-mock"))
     raise ValueError(f"unknown system: {name!r}")
 
 
-AVAILABLE = ["rules"]  # extended as routers land
+AVAILABLE = ["rules", "gemini", "jev", "jev-mock"]  # extended as routers land
 DEFAULT_SYSTEMS = "rules"
 
 
-def run(systems: list[str], alerts_path: str, teams_path: str | None, out_path: str) -> dict:
+def run(systems: list[str], alerts_path: str, teams_path: str | None, out_path: str,
+        condition: str = "forced") -> dict:
     teams = load_teams(teams_path)
+    if condition == "abstain":
+        teams = with_review(teams)  # offer the explicit review/abstain option
     alerts = load_alerts(alerts_path)
     results: list[dict] = []
 
@@ -59,6 +65,7 @@ def run(systems: list[str], alerts_path: str, teams_path: str | None, out_path: 
     payload = {
         "generated_at": _dt.datetime.now(_dt.timezone.utc).isoformat(),
         "threshold": REVIEW_THRESHOLD,
+        "condition": condition,
         "systems": systems,
         "teams": list(teams),
         "results": results,
@@ -76,11 +83,15 @@ def main(argv: list[str] | None = None) -> int:
                    help=f"comma-separated: {', '.join(AVAILABLE)} (default: {DEFAULT_SYSTEMS})")
     p.add_argument("--alerts", default="data/alerts.json", help="path to alerts JSON")
     p.add_argument("--teams", default=None, help="optional path to a teams JSON (bring your own)")
-    p.add_argument("--out", default="results/raw.json", help="where to write raw results")
+    p.add_argument("--condition", choices=["forced", "abstain"], default="forced",
+                   help="forced = teams only; abstain = teams + an explicit review option")
+    p.add_argument("--out", default=None, help="where to write raw results "
+                   "(default: results/raw_<condition>.json)")
     args = p.parse_args(argv)
 
     systems = [s.strip() for s in args.systems.split(",") if s.strip()]
-    run(systems, args.alerts, args.teams, args.out)
+    out = args.out or f"results/raw_{args.condition}.json"
+    run(systems, args.alerts, args.teams, out, args.condition)
     return 0
 
 
