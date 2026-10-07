@@ -68,6 +68,7 @@ def run(systems: list[str], alerts_path: str, teams_path: str | None, out_path: 
         "condition": condition,
         "systems": systems,
         "teams": list(teams),
+        "alerts_path": alerts_path,
         "results": results,
     }
     Path(out_path).parent.mkdir(parents=True, exist_ok=True)

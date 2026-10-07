@@ -1,0 +1,95 @@
+{
+  "threshold": 0.6,
+  "systems": {
+    "rules": {
+      "accuracy_pct": {
+        "forced": 96.7,
+        "abstain": 96.7
+      },
+      "misroute_pct": {
+        "forced": 0.0,
+        "abstain": 0.0
+      },
+      "missed_escalation_pct": {
+        "forced": 16.7,
+        "abstain": 16.7
+      },
+      "unnecessary_review_pct": {
+        "forced": 0.0,
+        "abstain": 0.0
+      },
+      "review_load_pct": {
+        "forced": 16.7,
+        "abstain": 16.7
+      },
+      "mean_latency_s": {
+        "forced": 0.0,
+        "abstain": 0.0
+      },
+      "est_cost_per_1k_usd": {
+        "forced": 0.0,
+        "abstain": 0.0
+      }
+    },
+    "jev": {
+      "accuracy_pct": {
+        "forced": 80.0,
+        "abstain": 96.7
+      },
+      "misroute_pct": {
+        "forced": 0.0,
+        "abstain": 0.0
+      },
+      "missed_escalation_pct": {
+        "forced": 100.0,
+        "abstain": 16.7
+      },
+      "unnecessary_review_pct": {
+        "forced": 0.0,
+        "abstain": 0.0
+      },
+      "review_load_pct": {
+        "forced": 0.0,
+        "abstain": 16.7
+      },
+      "mean_latency_s": {
+        "forced": 0.118,
+        "abstain": 0.105
+      },
+      "est_cost_per_1k_usd": {
+        "forced": 0.0217,
+        "abstain": 0.0236
+      }
+    },
+    "gemini": {
+      "accuracy_pct": {
+        "forced": 93.3,
+        "abstain": 100.0
+      },
+      "misroute_pct": {
+        "forced": 0.0,
+        "abstain": 0.0
+      },
+      "missed_escalation_pct": {
+        "forced": 33.3,
+        "abstain": 0.0
+      },
+      "unnecessary_review_pct": {
+        "forced": 0.0,
+        "abstain": 0.0
+      },
+      "review_load_pct": {
+        "forced": 13.3,
+        "abstain": 20.0
+      },
+      "mean_latency_s": {
+        "forced": 0.812,
+        "abstain": 0.809
+      },
+      "est_cost_per_1k_usd": {
+        "forced": 0.1999,
+        "abstain": 0.2088
+      }
+    }
+  }
+}

@@ -21,17 +21,24 @@ generative model earn its cost, and when should a rule — or a human — own th
 
 ## Quickstart
 
-> _Finalized in the last build step. Rough shape:_
+No keys needed for any of this — it runs on committed results and a local rules baseline.
 
 ```bash
 uv sync
-cp .env.example .env            # add keys you have; none required for the rules baseline
-uv run python -m nst.run --demo # narrated walkthrough of the headline cases
+
+# 1. The whole story, offline: forced vs. review-option, all three systems.
+uv run python -m nst.flow
+
+# 2. Build your own mix (offline, deterministic) and route it through the baseline.
+uv run python -m nst.generate --mix enterprise=6,email=6,cloud=6,review=4 --seed 7 --out data/mine.json
+uv run python -m nst.run --systems rules --alerts data/mine.json --condition abstain --out results/mine.json
+uv run python -m nst.metrics --raw results/mine.json
 ```
 
-You do **not** need a JEV key to see the three-way comparison — a `jev-mock` mode replays a
-committed sample distribution. See [data/SCHEMA.md](data/SCHEMA.md) to bring your own alerts
-and destination teams.
+Live calls are optional: put `TYPESAFE_API_KEY` / `GEMINI_API_KEY` in `.env`, then run
+`nst.run --systems rules,jev,gemini --condition forced|abstain` and `nst.compare`. See
+[LAB.md](LAB.md) for the 30-minute demo-lab runsheet and [data/SCHEMA.md](data/SCHEMA.md) to
+bring your own alerts and teams.
 
 ## Status
 

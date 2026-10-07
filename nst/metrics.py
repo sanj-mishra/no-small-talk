@@ -24,6 +24,12 @@ from statistics import mean
 from .core import PRICING, REVIEW_LABEL, REVIEW_THRESHOLD, RouteResult, load_alerts
 
 
+def _alerts_for(payload: dict) -> list[dict]:
+    """Ground-truth alerts the raw results were produced from (the built-in set unless the
+    run recorded a different alerts_path, e.g. a generated custom mix)."""
+    return load_alerts(payload.get("alerts_path") or "data/alerts.json")
+
+
 def _categorize(truth: str, final: str) -> str:
     if truth == REVIEW_LABEL:
         return "correct_escalation" if final == REVIEW_LABEL else "missed_escalation"
@@ -62,7 +68,7 @@ def _cost_per_1k(system: str, results: list[RouteResult]) -> float | None:
 
 
 def summarize(payload: dict, threshold: float) -> dict:
-    truth = {a["id"]: a["ground_truth"] for a in load_alerts()}
+    truth = {a["id"]: a["ground_truth"] for a in _alerts_for(payload)}
     n_routable = sum(1 for t in truth.values() if t != REVIEW_LABEL)
     n_review = sum(1 for t in truth.values() if t == REVIEW_LABEL)
 
@@ -95,7 +101,7 @@ def summarize(payload: dict, threshold: float) -> dict:
 
 def sweep(payload: dict, steps: int = 21) -> dict:
     """Misroute rate and review load as the review threshold varies 0..1."""
-    truth = {a["id"]: a["ground_truth"] for a in load_alerts()}
+    truth = {a["id"]: a["ground_truth"] for a in _alerts_for(payload)}
     n_routable = sum(1 for t in truth.values() if t != REVIEW_LABEL)
     n_review = sum(1 for t in truth.values() if t == REVIEW_LABEL)
     by_system: dict[str, list[RouteResult]] = defaultdict(list)
@@ -126,7 +132,7 @@ def sweep(payload: dict, steps: int = 21) -> dict:
 
 
 def hero_cases(payload: dict, threshold: float) -> list[dict]:
-    alerts = {a["id"]: a for a in load_alerts()}
+    alerts = {a["id"]: a for a in _alerts_for(payload)}
     tagged = [a for a in alerts.values() if "scenario" in a]
     by_alert: dict[str, list[RouteResult]] = defaultdict(list)
     for d in payload["results"]:
@@ -182,9 +188,13 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--raw", default="results/raw.json")
     p.add_argument("--threshold", type=float, default=REVIEW_THRESHOLD)
     p.add_argument("--out-dir", default="results")
+    p.add_argument("--alerts", default=None,
+                   help="override the ground-truth alerts file (else the run's recorded path)")
     args = p.parse_args(argv)
 
     payload = json.loads(Path(args.raw).read_text())
+    if args.alerts:
+        payload["alerts_path"] = args.alerts
     summary = summarize(payload, args.threshold)
     curves = sweep(payload)
     cases = hero_cases(payload, args.threshold)

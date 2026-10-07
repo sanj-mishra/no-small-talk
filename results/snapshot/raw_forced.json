@@ -1,0 +1,1337 @@
+{
+  "generated_at": "2026-10-06T16:57:50.917667+00:00",
+  "threshold": 0.6,
+  "condition": "forced",
+  "systems": [
+    "rules",
+    "jev",
+    "gemini"
+  ],
+  "teams": [
+    "enterprise",
+    "email",
+    "cloud"
+  ],
+  "results": [
+    {
+      "system": "rules",
+      "alert_id": "e1",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.0031227499712258577,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "e2",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00029387499671429396,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "e3",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.000276540988124907,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "e4",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00027704198146238923,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "e5",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.000293583027087152,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "e6",
+      "choice": "enterprise",
+      "confidence": 0.6666666666666666,
+      "probabilities": {
+        "enterprise": 0.6666666666666666,
+        "email": 0.0,
+        "cloud": 0.3333333333333333
+      },
+      "latency_s": 0.0003078749869018793,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "e7",
+      "choice": "enterprise",
+      "confidence": 0.8,
+      "probabilities": {
+        "enterprise": 0.8,
+        "email": 0.0,
+        "cloud": 0.2
+      },
+      "latency_s": 0.00029491697205230594,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "e8",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.0002578339772298932,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "m1",
+      "choice": "email",
+      "confidence": 0.8,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.8,
+        "cloud": 0.2
+      },
+      "latency_s": 0.00034912495175376534,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "m2",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 1.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00030733400490134954,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "m3",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 1.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00031833298271521926,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "m4",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 1.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.0002768749836832285,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "m5",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 1.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00027116696583107114,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "m6",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 1.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00028729200130328536,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "m7",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 1.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00034770899219438434,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "m8",
+      "choice": "email",
+      "confidence": 0.8,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.8,
+        "cloud": 0.2
+      },
+      "latency_s": 0.0003458749852143228,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "c1",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.0003269169828854501,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "c2",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.0002465830184519291,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "c3",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.0002699169563129544,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "c4",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.0002983749727718532,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "c5",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.0002860410022549331,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "c6",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.00027979101287201047,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "c7",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.00028658402152359486,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "c8",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.0002615409903228283,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "r1",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00026691704988479614,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "r2",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00029433303279802203,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "r3",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00031408300856128335,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "r4",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.00030750001315027475,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "r5",
+      "choice": "enterprise",
+      "confidence": 0.0,
+      "probabilities": {
+        "enterprise": 0.5,
+        "email": 0.5,
+        "cloud": 0.0
+      },
+      "latency_s": 0.0003147500101476908,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "r6",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.0002880420070141554,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "e1",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "cloud": 0.0,
+        "email": 0.0,
+        "enterprise": 1.0
+      },
+      "latency_s": 0.16382412501843646,
+      "input_tokens": 524,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "e2",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "cloud": 0.0,
+        "email": 0.0
+      },
+      "latency_s": 0.12077587499516085,
+      "input_tokens": 514,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "e3",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "cloud": 0.0,
+        "enterprise": 1.0,
+        "email": 0.0
+      },
+      "latency_s": 0.12359508400550112,
+      "input_tokens": 522,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "e4",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "cloud": 0.0,
+        "email": 0.0
+      },
+      "latency_s": 0.09348687500460073,
+      "input_tokens": 530,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "e5",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "cloud": 0.0,
+        "enterprise": 1.0,
+        "email": 0.0
+      },
+      "latency_s": 0.1021525000105612,
+      "input_tokens": 518,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "e6",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "email": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.11157395801274106,
+      "input_tokens": 513,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "e7",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "email": 0.0,
+        "enterprise": 1.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.1531108749913983,
+      "input_tokens": 518,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "e8",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "cloud": 0.0,
+        "enterprise": 1.0,
+        "email": 0.0
+      },
+      "latency_s": 0.09094120800727978,
+      "input_tokens": 511,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "m1",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 1.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.08608545799506828,
+      "input_tokens": 527,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "m2",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "email": 1.0,
+        "enterprise": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.09122750000096858,
+      "input_tokens": 523,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "m3",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "email": 1.0,
+        "enterprise": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.11574487498728558,
+      "input_tokens": 515,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "m4",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "email": 1.0,
+        "enterprise": 0.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.15216516703367233,
+      "input_tokens": 515,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "m5",
+      "choice": "email",
+      "confidence": 0.97,
+      "probabilities": {
+        "cloud": 0.02,
+        "enterprise": 0.0,
+        "email": 0.98
+      },
+      "latency_s": 0.14478500001132488,
+      "input_tokens": 505,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "m6",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 1.0,
+        "cloud": 0.0
+      },
+      "latency_s": 0.11556591599946842,
+      "input_tokens": 515,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "m7",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": {
+        "cloud": 0.0,
+        "enterprise": 0.0,
+        "email": 1.0
+      },
+      "latency_s": 0.11115241597872227,
+      "input_tokens": 511,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "m8",
+      "choice": "email",
+      "confidence": 0.99,
+      "probabilities": {
+        "cloud": 0.0,
+        "enterprise": 0.0,
+        "email": 1.0
+      },
+      "latency_s": 0.11145495902746916,
+      "input_tokens": 519,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "c1",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "cloud": 1.0,
+        "email": 0.0,
+        "enterprise": 0.0
+      },
+      "latency_s": 0.14727449999190867,
+      "input_tokens": 530,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "c2",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "cloud": 1.0,
+        "enterprise": 0.0,
+        "email": 0.0
+      },
+      "latency_s": 0.09458708402235061,
+      "input_tokens": 510,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "c3",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "email": 0.0,
+        "enterprise": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.09584579098736867,
+      "input_tokens": 509,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "c4",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "email": 0.0,
+        "enterprise": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.11658470798283815,
+      "input_tokens": 511,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "c5",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.13795941701391712,
+      "input_tokens": 514,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "c6",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "cloud": 1.0,
+        "email": 0.0
+      },
+      "latency_s": 0.17039225000189617,
+      "input_tokens": 508,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "c7",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 0.0,
+        "email": 0.0,
+        "cloud": 1.0
+      },
+      "latency_s": 0.07981462503084913,
+      "input_tokens": 512,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "c8",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "cloud": 1.0,
+        "enterprise": 0.0,
+        "email": 0.0
+      },
+      "latency_s": 0.06705387501278892,
+      "input_tokens": 505,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "r1",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "enterprise": 1.0,
+        "cloud": 0.0,
+        "email": 0.0
+      },
+      "latency_s": 0.09582375001627952,
+      "input_tokens": 509,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "r2",
+      "choice": "enterprise",
+      "confidence": 0.99,
+      "probabilities": {
+        "cloud": 0.01,
+        "email": 0.0,
+        "enterprise": 0.99
+      },
+      "latency_s": 0.1417546250158921,
+      "input_tokens": 513,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "r3",
+      "choice": "enterprise",
+      "confidence": 0.98,
+      "probabilities": {
+        "cloud": 0.01,
+        "enterprise": 0.99,
+        "email": 0.0
+      },
+      "latency_s": 0.11042787501355633,
+      "input_tokens": 535,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "r4",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": {
+        "cloud": 0.0,
+        "enterprise": 1.0,
+        "email": 0.0
+      },
+      "latency_s": 0.12213999999221414,
+      "input_tokens": 523,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "r5",
+      "choice": "enterprise",
+      "confidence": 0.86,
+      "probabilities": {
+        "email": 0.09,
+        "cloud": 0.0,
+        "enterprise": 0.91
+      },
+      "latency_s": 0.1308724589762278,
+      "input_tokens": 515,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "r6",
+      "choice": "enterprise",
+      "confidence": 0.92,
+      "probabilities": {
+        "cloud": 0.06,
+        "email": 0.0,
+        "enterprise": 0.94
+      },
+      "latency_s": 0.1464791669859551,
+      "input_tokens": 506,
+      "output_tokens": 38,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "e1",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.7747117499820888,
+      "input_tokens": 282,
+      "output_tokens": 49,
+      "notes": "The alert involves an endpoint-based EDR detection for process injection and malware execution on a corporate workstation.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "e2",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.7897999169654213,
+      "input_tokens": 274,
+      "output_tokens": 49,
+      "notes": "The alert involves malware on an internal server and a persistent scheduled task, which falls under enterprise endpoint security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "e3",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.6642168329562992,
+      "input_tokens": 284,
+      "output_tokens": 48,
+      "notes": "The alert describes internal network lateral movement via SMB and host IDS detections, which fall under Enterprise Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "e4",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.7817908329889178,
+      "input_tokens": 293,
+      "output_tokens": 46,
+      "notes": "The alert is triggered by EDR detecting malware execution and beaconing on a corporate laptop.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "e5",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.8774832499912009,
+      "input_tokens": 281,
+      "output_tokens": 46,
+      "notes": "The alert involves on-premise Active Directory authentication and lateral activity from an enterprise workstation.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "e6",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.7032275410019793,
+      "input_tokens": 275,
+      "output_tokens": 46,
+      "notes": "The alert involves Sysmon detections for credential dumping and process execution on a specific host workstation.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "e7",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.9506381659884937,
+      "input_tokens": 272,
+      "output_tokens": 54,
+      "notes": "The alert involves ransomware activity and file modification on an on-premise file server, which falls under enterprise endpoint and host security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "e8",
+      "choice": "enterprise",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.8780176669824868,
+      "input_tokens": 272,
+      "output_tokens": 41,
+      "notes": "The alert describes a host-based firewall event on a workstation (endpoint), which falls under Enterprise Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "m1",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.8515954170143232,
+      "input_tokens": 287,
+      "output_tokens": 46,
+      "notes": "The alert describes a user-reported phishing email with a malicious attachment designed to harvest credentials.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "m2",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.7209099580068141,
+      "input_tokens": 280,
+      "output_tokens": 42,
+      "notes": "The alert involves a malicious inbound message and attachment detected by Proofpoint.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "m3",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 1.1662192920339294,
+      "input_tokens": 277,
+      "output_tokens": 43,
+      "notes": "The alert describes a CEO-impersonation phishing attack delivered via email.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "m4",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.6091194159816951,
+      "input_tokens": 272,
+      "output_tokens": 43,
+      "notes": "The alert involves a secure email gateway blocking a phishing campaign delivered via email.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "m5",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.7421213749912567,
+      "input_tokens": 266,
+      "output_tokens": 40,
+      "notes": "The security incident originated from a malicious link delivered via email.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "m6",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.7499491660273634,
+      "input_tokens": 275,
+      "output_tokens": 49,
+      "notes": "The alert is triggered by the spam filter regarding a spoofed internal sender and phishing links delivered via email.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "m7",
+      "choice": "email",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.6515489159501158,
+      "input_tokens": 272,
+      "output_tokens": 44,
+      "notes": "The alert describes an attachment-based threat delivered via email from an external domain.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "m8",
+      "choice": "email",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 0.7545482919667847,
+      "input_tokens": 277,
+      "output_tokens": 45,
+      "notes": "The alert describes an active phishing campaign involving malicious emails sent from a compromised account.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "c1",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.7395932499784976,
+      "input_tokens": 280,
+      "output_tokens": 43,
+      "notes": "The alert is generated by GuardDuty and describes anomalous AWS IAM API activity.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "c2",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.8226525410427712,
+      "input_tokens": 273,
+      "output_tokens": 46,
+      "notes": "The alert describes an S3 bucket ACL change, which is a cloud infrastructure security issue.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "c3",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.6952135410392657,
+      "input_tokens": 270,
+      "output_tokens": 49,
+      "notes": "The alert involves an Okta sign-in anomaly, which is explicitly owned by the Cloud Security team.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "c4",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.6916679160203785,
+      "input_tokens": 274,
+      "output_tokens": 49,
+      "notes": "The alert involves Azure AD OAuth app consent grants and SaaS identity provider activity, which falls under Cloud Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "c5",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.6831374579924159,
+      "input_tokens": 270,
+      "output_tokens": 46,
+      "notes": "The alert is triggered by AWS CloudTrail activity involving a Lambda execution role and secret access.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "c6",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.689188040967565,
+      "input_tokens": 268,
+      "output_tokens": 48,
+      "notes": "The alert describes GCP service-account activity and storage bucket enumeration, which falls directly under Cloud Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "c7",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 0.7450781670049764,
+      "input_tokens": 275,
+      "output_tokens": 57,
+      "notes": "The alert involves Entra ID, legacy authentication, and conditional-access policy bypasses, which fall under cloud and SaaS platform identity threats.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "c8",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 0.9688919999753125,
+      "input_tokens": 265,
+      "output_tokens": 50,
+      "notes": "The alert describes an AWS root-account console login and CloudTrail logs, which fall directly under cloud security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "r1",
+      "choice": "enterprise",
+      "confidence": 0.7,
+      "probabilities": null,
+      "latency_s": 0.7529387089889497,
+      "input_tokens": 268,
+      "output_tokens": 48,
+      "notes": "The alert specifies an anomalous activity on a host asset, which falls under enterprise endpoint and host security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "r2",
+      "choice": "enterprise",
+      "confidence": 0.4,
+      "probabilities": null,
+      "latency_s": 0.8517156249727122,
+      "input_tokens": 273,
+      "output_tokens": 46,
+      "notes": "The alert lacks specific context regarding cloud or email platforms, so enterprise is chosen by default.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "r3",
+      "choice": "enterprise",
+      "confidence": 0.5,
+      "probabilities": null,
+      "latency_s": 0.7007166249677539,
+      "input_tokens": 295,
+      "output_tokens": 48,
+      "notes": "The alert comes from a firewall which is part of internal network and perimeter infrastructure managed by enterprise security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "r4",
+      "choice": "enterprise",
+      "confidence": 0.5,
+      "probabilities": null,
+      "latency_s": 1.714199083042331,
+      "input_tokens": 282,
+      "output_tokens": 51,
+      "notes": "The alert lacks enough context to determine the source system, so it defaults to enterprise security for general network IOC matching.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "r5",
+      "choice": "enterprise",
+      "confidence": 0.5,
+      "probabilities": null,
+      "latency_s": 0.8565872919862159,
+      "input_tokens": 275,
+      "output_tokens": 49,
+      "notes": "The user reported a suspicious event on their computer, but the lack of detailed artifacts makes routing less certain.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "r6",
+      "choice": "enterprise",
+      "confidence": 0.9,
+      "probabilities": null,
+      "latency_s": 0.7702583749778569,
+      "input_tokens": 266,
+      "output_tokens": 45,
+      "notes": "Data Loss Prevention (DLP) alerts are explicitly owned by the enterprise security team.",
+      "error": null
+    }
+  ]
+}

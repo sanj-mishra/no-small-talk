@@ -82,7 +82,7 @@
       "id": "m8",
       "text": "A phishing campaign is being sent from a compromised internal Microsoft 365 account (user mchen), which is now blasting lookalike-invoice emails to the entire finance distribution list.",
       "ground_truth": "email",
-      "scenario": "disagreement"
+      "scenario": "cross_domain"
     },
 
     {

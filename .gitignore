@@ -2,5 +2,9 @@
 __pycache__/
 *.pyc
 .env
-results/
+/results/*
+!/results/snapshot/
+# attendee-generated mixes (regenerable; keep only the curated data/alerts.json)
+data/mine.json
+data/my_alerts.json
 .uv/
