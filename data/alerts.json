@@ -1,129 +1,129 @@
 {
-  "_comment": "30 synthetic security alerts for routing. ground_truth in {enterprise, email, cloud, review}. 'review' = genuinely insufficient/ambiguous context, where escalation is the correct answer. 'scenario' tags the three cases walked through on stage. See data/SCHEMA.md.",
+  "_comment": "30 synthetic security alerts for routing. ground_truth in {soc, cloud, prodsec, review}. 'review' = genuinely insufficient/ambiguous context, where escalation is the correct answer. 'scenario' tags the cases walked through on stage. See data/SCHEMA.md.",
   "alerts": [
     {
-      "id": "e1",
+      "id": "soc1",
       "text": "CrowdStrike Falcon: process injection on WKS-2290 (user jdoe). mimikatz.exe spawned from powershell.exe with an LSASS memory read attempt. Host quarantined.",
-      "ground_truth": "enterprise"
+      "ground_truth": "soc"
     },
     {
-      "id": "e2",
-      "text": "Microsoft Defender quarantined an Emotet variant on SRV-FS03. A scheduled task was created for persistence under C:\\Windows\\Temp\\svc.exe.",
-      "ground_truth": "enterprise"
-    },
-    {
-      "id": "e3",
+      "id": "soc2",
       "text": "Host IDS: SMB lateral movement from 10.12.4.33 to 11 internal hosts over port 445 within 90 seconds. Pass-the-hash pattern suspected.",
-      "ground_truth": "enterprise"
+      "ground_truth": "soc"
     },
     {
-      "id": "e4",
-      "text": "EDR: unsigned binary 'svch0st.exe' executing from %APPDATA% on LAPTOP-FIN12 and beaconing every 60s to a known C2 IP (45.9.148.x).",
-      "ground_truth": "enterprise"
-    },
-    {
-      "id": "e5",
-      "text": "On-prem Active Directory: 240 failed Kerberos pre-auth attempts against the DOMAIN\\svc-backup account in 2 minutes, all sourced from workstation HR-114.",
-      "ground_truth": "enterprise"
-    },
-    {
-      "id": "e6",
-      "text": "Sysmon: credential-dumping tool wrote to disk on DEV-BUILD-07; parent process cmd.exe launched by a service account outside its baseline working hours.",
-      "ground_truth": "enterprise"
-    },
-    {
-      "id": "e7",
+      "id": "soc3",
       "text": "Antivirus console: ransomware canary files modified on file server SRV-NAS01, with a rapid sequential-encryption pattern spreading across the \\\\finance share.",
-      "ground_truth": "enterprise"
+      "ground_truth": "soc"
     },
     {
-      "id": "e8",
-      "text": "Host firewall on WKS-5521 repeatedly blocked outbound connections to a Tor entry node every ~5 minutes since 02:00 local.",
-      "ground_truth": "enterprise"
+      "id": "soc4",
+      "text": "EDR: unsigned binary 'svch0st.exe' executing from %APPDATA% on LAPTOP-FIN12 and beaconing every 60s to a known C2 IP (45.9.148.x).",
+      "ground_truth": "soc"
     },
-
     {
-      "id": "m1",
+      "id": "soc5",
       "text": "User-reported phishing: message from 'payroll@adp-secure[.]com', subject 'Updated Direct Deposit', with an HTML attachment 'form.html' that renders a fake Microsoft 365 login to harvest credentials.",
-      "ground_truth": "email",
+      "ground_truth": "soc",
       "scenario": "easy"
     },
     {
-      "id": "m2",
-      "text": "Proofpoint flagged an inbound message carrying a password-protected archive 'invoice_8831.zip' containing a Qakbot loader. Delivered to 14 mailboxes before the block.",
-      "ground_truth": "email"
-    },
-    {
-      "id": "m3",
+      "id": "soc6",
       "text": "Business email compromise: a CEO-impersonation email requesting an urgent wire transfer, with reply-to set to an external gmail.com address. Display name matches the real CEO.",
-      "ground_truth": "email"
+      "ground_truth": "soc"
     },
     {
-      "id": "m4",
-      "text": "Secure email gateway blocked a campaign of 320 messages from the lookalike domain 'rnicrosoft[.]com' containing a credential-phishing link.",
-      "ground_truth": "email"
+      "id": "soc7",
+      "text": "Proofpoint flagged an inbound message carrying a password-protected archive 'invoice_8831.zip' containing a Qakbot loader. Delivered to 14 mailboxes before the block.",
+      "ground_truth": "soc"
     },
     {
-      "id": "m5",
+      "id": "soc8",
       "text": "User clicked a link in an email that led to a fake DocuSign login page and submitted their corporate credentials before reporting it.",
-      "ground_truth": "email"
-    },
-    {
-      "id": "m6",
-      "text": "Spam filter: a spoofed internal sender 'it-helpdesk@' is asking users to 'verify mailbox quota' through an external link. ~40 recipients.",
-      "ground_truth": "email"
-    },
-    {
-      "id": "m7",
-      "text": "Attachment sandbox detonation: 'Resume_2026.doc' with a macro that downloads a second-stage payload. Sender is an external recruiter domain.",
-      "ground_truth": "email"
-    },
-    {
-      "id": "m8",
-      "text": "A phishing campaign is being sent from a compromised internal Microsoft 365 account (user mchen), which is now blasting lookalike-invoice emails to the entire finance distribution list.",
-      "ground_truth": "email",
-      "scenario": "cross_domain"
+      "ground_truth": "soc"
     },
 
     {
-      "id": "c1",
+      "id": "cloud1",
       "text": "GuardDuty: anomalous IAM API calls — CreateAccessKey followed by AttachUserPolicy (AdministratorAccess) — for the 'ci-deploy' user from a new IP in eu-west-1.",
       "ground_truth": "cloud"
     },
     {
-      "id": "c2",
+      "id": "cloud2",
       "text": "S3 bucket 'acme-customer-pii' ACL was changed to public-read; roughly 1.2M objects are now world-readable.",
       "ground_truth": "cloud"
     },
     {
-      "id": "c3",
+      "id": "cloud3",
       "text": "Okta: impossible-travel sign-in for user asingh — London then Lagos within 8 minutes — with MFA satisfied via push on both.",
       "ground_truth": "cloud"
     },
     {
-      "id": "c4",
+      "id": "cloud4",
       "text": "Azure AD: three new OAuth app consent grants requesting Mail.Read and Files.ReadWrite.All across the tenant, approved by non-admin users within an hour.",
       "ground_truth": "cloud"
     },
     {
-      "id": "c5",
+      "id": "cloud5",
       "text": "CloudTrail: GetSecretValue calls from a Lambda execution role spiked ~400x above baseline, pulling secrets the function has never read before.",
       "ground_truth": "cloud"
     },
     {
-      "id": "c6",
+      "id": "cloud6",
       "text": "GCP: a service-account key was created and immediately used from an unrecognized ASN to enumerate every storage bucket in project prod-data.",
       "ground_truth": "cloud"
     },
     {
-      "id": "c7",
+      "id": "cloud7",
       "text": "Entra ID: a legacy-auth (IMAP) sign-in succeeded for an executive account from a foreign IP, bypassing the tenant's conditional-access policy.",
       "ground_truth": "cloud"
     },
     {
-      "id": "c8",
+      "id": "cloud8",
       "text": "AWS: a root-account console login from an unfamiliar device, with no MFA challenge recorded in CloudTrail for the session.",
       "ground_truth": "cloud"
+    },
+
+    {
+      "id": "prod1",
+      "text": "SAST on the checkout-service pull request flagged a SQL injection in an unparameterized query that handles order lookups; the PR is approved and queued to merge.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "prod2",
+      "text": "Dependency scanner: a critical remote-code-execution CVE in a logging library bundled by the internet-facing payments microservice. A fixed version is available.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "prod3",
+      "text": "Secret scanner: a long-lived AWS access key for a production role was committed to the mobile-app GitHub repo and pushed to the default branch.",
+      "ground_truth": "prodsec",
+      "scenario": "cross_domain"
+    },
+    {
+      "id": "prod4",
+      "text": "Bug bounty report: an unauthenticated endpoint on the public API (/v2/users/{id}) returns full customer PII for arbitrary IDs — a classic IDOR.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "prod5",
+      "text": "CI/CD alert: an unexpected build step was injected into the release pipeline and pulls a script from an external URL during the production build.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "prod6",
+      "text": "Image scanner: the production api-gateway container ships a base image with a known critical vulnerability and runs its process as root.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "prod7",
+      "text": "DAST scan of the customer portal found a reflected cross-site scripting (XSS) flaw on the login page that executes attacker-supplied script.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "prod8",
+      "text": "A developer reports that debug mode is enabled on the production web app, exposing stack traces and internal API keys in error responses.",
+      "ground_truth": "prodsec"
     },
 
     {

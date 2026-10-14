@@ -18,24 +18,29 @@ NAME = "rules"
 # Natural, SOC-plausible keywords per team. Intentionally not tuned to the test set —
 # a fair baseline, not a strawman (and not sabotaged either).
 KEYWORDS: dict[str, list[str]] = {
-    "enterprise": [
+    "soc": [
+        # endpoint / host / network
         "edr", "crowdstrike", "falcon", "defender", "antivirus", "sysmon", "lsass",
-        "mimikatz", "powershell", "endpoint", "workstation", "laptop", "server",
-        "active directory", "kerberos", "ntlm", "lateral movement", "smb", "pass-the-hash",
-        "ransomware", "beacon", "c2", "process injection", "scheduled task", "host firewall",
-        "credential-dumping", "credential dumping", "wks-", "srv-", "host",
-    ],
-    "email": [
-        "phish", "phishing", "email", "mailbox", "inbox", "attachment", "proofpoint",
-        "spam", "sender", "message", "recipient", "business email compromise", "bec",
-        "wire transfer", "docusign", "macro", "invoice", "gateway", "spoof",
-        "lookalike domain", "reply-to", "distribution list",
+        "mimikatz", "powershell", "workstation", "laptop", "active directory", "kerberos",
+        "ntlm", "lateral movement", "smb", "pass-the-hash", "ransomware", "beacon", "c2",
+        "process injection", "host firewall", "wks-", "srv-", "host",
+        # email / phishing
+        "phish", "phishing", "email", "mailbox", "inbox", "proofpoint", "spam", "sender",
+        "business email compromise", "bec", "wire transfer", "docusign", "invoice",
+        "spoof", "lookalike domain", "attachment",
     ],
     "cloud": [
         "aws", "gcp", "azure", "s3", "bucket", "iam", "cloudtrail", "guardduty", "okta",
-        "entra", "azure ad", "oauth", "console", "lambda", "secret", "service account",
+        "entra", "azure ad", "oauth", "console", "lambda", "service account",
         "service-account", "conditional access", "sign-in", "root account", "microsoft 365",
         "m365", "access key", "region eu-", "impossible-travel", "impossible travel",
+    ],
+    "prodsec": [
+        "sast", "dast", "sql injection", "sqli", "injection", "cve", "dependency",
+        "vulnerability", "vulnerable", "pull request", "repo", "repository", "commit",
+        "committed", "ci/cd", "pipeline", "build", "container", "image", "idor", "api",
+        "bug bounty", "xss", "cross-site", "remote-code-execution", "rce", "debug mode",
+        "stack trace", "microservice", "secret scanner",
     ],
 }
 

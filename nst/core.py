@@ -18,20 +18,23 @@ from typing import Optional
 # Destination teams, keyed by label, with the criteria description each router sees.
 # Swap these out (or load your own via load_teams) to retarget the benchmark.
 DEFAULT_TEAMS: dict[str, str] = {
-    "enterprise": (
-        "Enterprise Security — endpoint, host, and internal-network threats: EDR/antivirus "
-        "detections, malware on workstations or servers, on-prem Active Directory and Windows "
-        "authentication, lateral movement inside the corporate network, host-based IDS/DLP."
-    ),
-    "email": (
-        "Email Security — email-borne threats: phishing, spear-phishing, business email "
-        "compromise, spam, and malicious links or attachments delivered by email, including "
-        "secure email gateway detections."
+    "soc": (
+        "SOC (Security Operations Center) — day-to-day detection and response across the "
+        "corporate environment: endpoint/EDR and host malware, phishing and other email-borne "
+        "threats, on-prem Active Directory and Windows authentication, lateral movement, and "
+        "internal-network/IDS alerts."
     ),
     "cloud": (
         "Cloud Security — cloud and SaaS platform threats: AWS/GCP/Azure activity, IAM and "
         "cloud console logins, storage buckets, cloud misconfiguration, and SaaS identity "
         "providers (Okta/Entra) including OAuth app consent grants."
+    ),
+    "prodsec": (
+        "Product Security (ProdSec/AppSec) — security of the organization's OWN software and "
+        "services: application vulnerabilities (SAST/DAST), insecure or exposed API endpoints, "
+        "vulnerable dependencies/CVEs in shipped code, secrets committed to source, CI/CD "
+        "pipeline tampering, container-image vulnerabilities, and inbound bug-bounty or pentest "
+        "findings against the product."
     ),
 }
 

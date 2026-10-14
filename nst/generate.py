@@ -33,21 +33,15 @@ from .core import REVIEW_LABEL, load_teams, valid_labels
 # template sits under the label it is written to be — that is the generated ground truth.
 
 TEMPLATES: dict[str, list[str]] = {
-    "enterprise": [
+    "soc": [
         "{edr} flagged {mal} on host {host} (user {user}); {tech} detected.",
         "{edr}: unsigned binary executing from %APPDATA% on {host}, beaconing to a known C2 IP.",
         "Host IDS: lateral movement from {ip} to multiple internal hosts over SMB (port 445).",
-        "On-prem Active Directory: {num} failed Kerberos pre-auth attempts for {user} from {host}.",
-        "Sysmon on {host}: credential-dumping tool wrote to disk, parent process launched by a service account.",
         "Antivirus: ransomware-style sequential file encryption spreading across a share from {host}.",
-    ],
-    "email": [
         "User-reported phishing from '{sender}' with a credential-harvesting {attach} attachment.",
         "{gw} blocked an inbound message carrying a {mal} loader in a password-protected archive.",
         "Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.",
-        "{gw} blocked a campaign of {num} messages from lookalike domain '{domain}' with a phishing link.",
         "User clicked a link in an email to a fake {brand} login and submitted corporate credentials.",
-        "Spoofed internal sender 'it-helpdesk@' asking {num} users to verify mailbox quota via a link.",
     ],
     "cloud": [
         "{cloud}: anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for '{user}' from a new IP.",
@@ -56,6 +50,15 @@ TEMPLATES: dict[str, list[str]] = {
         "{cloud}: a service-account key was created and immediately used from an unrecognized ASN.",
         "{idp}: legacy-auth sign-in succeeded for an exec account from a foreign IP, bypassing conditional access.",
         "{cloud}: root/owner console login from an unfamiliar device with no MFA challenge recorded.",
+    ],
+    "prodsec": [
+        "SAST on the {svc} pull request flagged a SQL injection in an unparameterized query.",
+        "Dependency scanner: a critical RCE CVE in a library bundled by the internet-facing {svc}.",
+        "Secret scanner: a production AWS access key was committed to the {repo} repo on the default branch.",
+        "Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).",
+        "CI/CD: an unexpected build step was injected into the release pipeline for {svc}, fetching an external script.",
+        "Image scanner: the production {svc} container ships a base image with a known critical vuln and runs as root.",
+        "DAST on the customer portal found a reflected XSS on the {svc} login page.",
     ],
     REVIEW_LABEL: [
         "{tool} alert: anomalous activity detected on asset {host}. Risk score {num}. {missing}.",
@@ -82,6 +85,8 @@ POOLS: dict[str, list[str]] = {
     "cloud": ["AWS (GuardDuty)", "GCP", "Azure"],
     "bucket": ["acme-customer-pii", "prod-backups", "analytics-exports"],
     "idp": ["Okta", "Entra ID", "Azure AD"],
+    "svc": ["checkout-service", "payments-api", "auth-service", "api-gateway", "orders-worker"],
+    "repo": ["mobile-app", "web-frontend", "billing-core", "infra-scripts"],
     "tool": ["SIEM", "the DLP connector", "the anomaly model"],
     "corr": ["Suspicious Behavior - Multiple", "Impossible Chain", "Rare Process + Net"],
     "missing": ["no further detail from the connector", "details truncated at the forwarder",
