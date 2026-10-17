@@ -1,7 +1,7 @@
 # CFP Submission — Demo Lab
 
 > Paste-ready source for the BSides NYC AI Village submission. Numbers are from the live
-> run on 30 synthetic alerts (review threshold 0.6). Replace the **bio** placeholders before
+> run on 120 synthetic alerts (review threshold 0.6). Replace the **bio** placeholders before
 > submitting.
 
 ---
@@ -19,7 +19,7 @@ the exact commands on their own laptops with **no API keys and no internet** if 
 ## One-line summary
 
 A decision model, a generative LLM, and a pile of rules walk into a SOC queue — we route the
-same 30 alerts through all three and measure the thing accuracy hides: who gets silently
+same 120 alerts through all three and measure the thing accuracy hides: who gets silently
 sent to the wrong team, and who knows when to ask a human.
 
 ## Abstract
@@ -30,7 +30,7 @@ that call, but it may be more model than the task needs. A newer class of *decis
 ("System One") models picks from a fixed set of options and returns a calibrated confidence
 instead of free text.
 
-In this demo lab I route the same 30 synthetic alerts through three systems — a rules
+In this demo lab I route the same 120 synthetic alerts through three systems — a rules
 baseline, **JEV** (a hosted decision-native model), and **Gemini** (a hosted generative LLM) —
 each of which must choose an owning team or escalate to human review. We watch every system
 confidently misroute the alerts that have *no* right team, see why a valid, high-confidence
@@ -51,7 +51,7 @@ findings, failures included — not production-ready triage.
    silently sends the no-context alerts to a team anyway (JEV misses all 6, Gemini 4 of 6). A
    valid, schema-correct, high-confidence answer to the wrong question.
 3. **The fix (~6 min).** Add one explicit "review" option and re-run. Accuracy jumps — JEV
-   80% → 93%, Gemini 87% → 100% — and the clear alerts are untouched. The fix is the *option
+   79% → 93%, Gemini 88% → 98% — and the clear alerts are untouched. The fix is the *option
    set*, not a bigger model.
 4. **Your turn (~6 min).** Attendees generate an alert mix shaped like their own queue and
    route it live, offline, on their laptops — and find where the models break on their data.

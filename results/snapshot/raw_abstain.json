@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T05:04:20.872244+00:00",
+  "generated_at": "2026-10-16T16:44:47.158448+00:00",
   "threshold": 0.6,
   "condition": "abstain",
   "systems": [
@@ -26,7 +26,7 @@
         "prodsec": 0.1111111111111111,
         "review": 0.0
       },
-      "latency_s": 0.0038324579945765436,
+      "latency_s": 0.003719792002812028,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -43,7 +43,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.00035687501076608896,
+      "latency_s": 0.00038225000025704503,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -60,7 +60,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003950829850509763,
+      "latency_s": 0.0004107499844394624,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -77,7 +77,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003542079939506948,
+      "latency_s": 0.000377874996047467,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -94,7 +94,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0004472500295378268,
+      "latency_s": 0.0004855419974774122,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -111,7 +111,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0004058339982293546,
+      "latency_s": 0.00043466599890962243,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -128,7 +128,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.00039479200495406985,
+      "latency_s": 0.000424250029027462,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -145,7 +145,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003435830003581941,
+      "latency_s": 0.0003688340075314045,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -162,7 +162,7 @@
         "prodsec": 0.3333333333333333,
         "review": 0.0
       },
-      "latency_s": 0.0003927500220015645,
+      "latency_s": 0.0004022499779239297,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -179,7 +179,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003102500340901315,
+      "latency_s": 0.00032941700192168355,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -196,7 +196,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.00032641703728586435,
+      "latency_s": 0.0003299579839222133,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -213,7 +213,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003737910301424563,
+      "latency_s": 0.0003979169996455312,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -230,7 +230,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003576249582692981,
+      "latency_s": 0.0003832909860648215,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -247,7 +247,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.00035387498792260885,
+      "latency_s": 0.000377874996047467,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -264,7 +264,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.00036104099126532674,
+      "latency_s": 0.0003868750063702464,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -281,7 +281,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003281660028733313,
+      "latency_s": 0.0003480419982224703,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -298,7 +298,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.0003826250322163105,
+      "latency_s": 0.00040995795279741287,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -315,7 +315,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.00038179202238097787,
+      "latency_s": 0.00040933297714218497,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -332,7 +332,7 @@
         "prodsec": 0.6,
         "review": 0.0
       },
-      "latency_s": 0.00035966699942946434,
+      "latency_s": 0.00038129097083583474,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -349,7 +349,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.00036087504122406244,
+      "latency_s": 0.00036162498872727156,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -366,7 +366,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.00037120800698176026,
+      "latency_s": 0.0003857500269077718,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -383,7 +383,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.00034666701685637236,
+      "latency_s": 0.0003682500100694597,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -400,7 +400,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.0003573329886421561,
+      "latency_s": 0.0003796250093728304,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -417,7 +417,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.00035212497459724545,
+      "latency_s": 0.00037945801159366965,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -434,7 +434,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003434160025790334,
+      "latency_s": 0.0003520409809425473,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -451,7 +451,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.00036966701736673713,
+      "latency_s": 0.0003946250071749091,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -468,7 +468,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.00038704200414940715,
+      "latency_s": 0.0004219159600324929,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -485,7 +485,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003916250425390899,
+      "latency_s": 0.0004207079764455557,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -502,7 +502,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003991250414401293,
+      "latency_s": 0.0004297079867683351,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -519,7 +519,1537 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.0003654579631984234,
+      "latency_s": 0.00039012503111734986,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g88",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003786659799516201,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g60",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00034141697688028216,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g15",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003048329963348806,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g18",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003136250306852162,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g85",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003470830270089209,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g77",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003257079515606165,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g53",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003373749786987901,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g37",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029033300234004855,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g21",
+      "choice": "soc",
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.5,
+        "cloud": 0.5,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00031529099214822054,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g20",
+      "choice": "soc",
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.5,
+        "cloud": 0.5,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00031458301236853004,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g55",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00028300000121816993,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g81",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00035200000274926424,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g84",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00036908400943502784,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g3",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00030158302979543805,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g65",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002852079924196005,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g56",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00030562496976926923,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g40",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029033300234004855,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g67",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00033183296909555793,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g19",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003017500275745988,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g8",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00030683301156386733,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g54",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029395800083875656,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g87",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.000362291990313679,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g48",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029029202414676547,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g35",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029012502636760473,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g33",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002910830080509186,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g71",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00033849995816126466,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g32",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00030883296858519316,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g76",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00037691701436415315,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g5",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00030691601568832994,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g24",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003055419656448066,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g17",
+      "choice": "soc",
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.5,
+        "cloud": 0.5,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00031345803290605545,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g7",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003030420048162341,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g69",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00033125001937150955,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g43",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00028787500923499465,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g72",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029512500623241067,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g39",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003286669962108135,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g23",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00032950000604614615,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g59",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00034016702556982636,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g42",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00028958398615941405,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g74",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00034991599386557937,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g38",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002894999925047159,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g10",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00031350000062957406,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g2",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00031400000443682075,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g9",
+      "choice": "soc",
+      "confidence": 0.8333333333333334,
+      "probabilities": {
+        "soc": 0.8333333333333334,
+        "cloud": 0.0,
+        "prodsec": 0.16666666666666666,
+        "review": 0.0
+      },
+      "latency_s": 0.00029920798260718584,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g68",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003293330082669854,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g66",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003284999984316528,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g52",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003041250165551901,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g64",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00032762502087280154,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g75",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003358329995535314,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g73",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00033674994483590126,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g79",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00037545798113569617,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g6",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00031708303140476346,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g22",
+      "choice": "soc",
+      "confidence": 0.75,
+      "probabilities": {
+        "soc": 0.75,
+        "cloud": 0.0,
+        "prodsec": 0.25,
+        "review": 0.0
+      },
+      "latency_s": 0.00032308296067640185,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g41",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00030137505382299423,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g63",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00034775002859532833,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g28",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029133399948477745,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g12",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00030741695081815124,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g57",
+      "choice": "prodsec",
+      "confidence": 0.6,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.4,
+        "prodsec": 0.6,
+        "review": 0.0
+      },
+      "latency_s": 0.00031687499722465873,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g31",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002954999799840152,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g13",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003095419961027801,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g49",
+      "choice": "prodsec",
+      "confidence": 0.6,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.4,
+        "prodsec": 0.6,
+        "review": 0.0
+      },
+      "latency_s": 0.0003215000033378601,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g90",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003683749819174409,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g51",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002921670093201101,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g50",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003029590006917715,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g16",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003182920045219362,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g83",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003783749998547137,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g80",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003275410272181034,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g70",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002935000229626894,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g1",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00032845797250047326,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g62",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003429169883020222,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g27",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029087497387081385,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g44",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003090000245720148,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g26",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003269580192863941,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g86",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003628340200521052,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g30",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003088749945163727,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g14",
+      "choice": "soc",
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.5,
+        "cloud": 0.5,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002960000419989228,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g29",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00030637497548013926,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g11",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003022500313818455,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g47",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00032816699240356684,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g82",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00034304201835766435,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g58",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00030291598523035645,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g45",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029012502636760473,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g78",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003856249968521297,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g25",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00031212501926347613,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g34",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002934579970315099,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g61",
+      "choice": "prodsec",
+      "confidence": 0.6,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.4,
+        "prodsec": 0.6,
+        "review": 0.0
+      },
+      "latency_s": 0.0003195839817635715,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g36",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002901249681599438,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g89",
+      "choice": null,
+      "confidence": 0.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.00029670901130884886,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g4",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0003067079815082252,
+      "input_tokens": null,
+      "output_tokens": null,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "rules",
+      "alert_id": "g46",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.0002906660083681345,
       "input_tokens": null,
       "output_tokens": null,
       "notes": null,
@@ -536,7 +2066,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.33682745799887925,
+      "latency_s": 0.2771492500323802,
       "input_tokens": 608,
       "output_tokens": 46,
       "notes": null,
@@ -553,7 +2083,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.29291345801902935,
+      "latency_s": 0.12193683400982991,
       "input_tokens": 606,
       "output_tokens": 46,
       "notes": null,
@@ -570,7 +2100,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.19071362499380484,
+      "latency_s": 0.19729095901129767,
       "input_tokens": 602,
       "output_tokens": 46,
       "notes": null,
@@ -587,7 +2117,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.15289137500803918,
+      "latency_s": 0.14319520897697657,
       "input_tokens": 614,
       "output_tokens": 46,
       "notes": null,
@@ -604,7 +2134,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.20986054197419435,
+      "latency_s": 0.15350200003013015,
       "input_tokens": 611,
       "output_tokens": 46,
       "notes": null,
@@ -621,7 +2151,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.2651882919599302,
+      "latency_s": 0.1662076250067912,
       "input_tokens": 599,
       "output_tokens": 46,
       "notes": null,
@@ -638,7 +2168,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.17250895797042176,
+      "latency_s": 0.36193020798964426,
       "input_tokens": 607,
       "output_tokens": 46,
       "notes": null,
@@ -655,7 +2185,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.1790666250162758,
+      "latency_s": 0.293099083006382,
       "input_tokens": 589,
       "output_tokens": 46,
       "notes": null,
@@ -672,7 +2202,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.23529391700867563,
+      "latency_s": 0.18679283396340907,
       "input_tokens": 614,
       "output_tokens": 46,
       "notes": null,
@@ -689,7 +2219,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.26506633404642344,
+      "latency_s": 0.13120887498371303,
       "input_tokens": 594,
       "output_tokens": 46,
       "notes": null,
@@ -706,7 +2236,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.1672340410295874,
+      "latency_s": 0.13090362498769537,
       "input_tokens": 593,
       "output_tokens": 46,
       "notes": null,
@@ -723,7 +2253,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.2443376670125872,
+      "latency_s": 0.14292495796689764,
       "input_tokens": 595,
       "output_tokens": 46,
       "notes": null,
@@ -740,7 +2270,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.1968340830062516,
+      "latency_s": 0.1543037500232458,
       "input_tokens": 598,
       "output_tokens": 46,
       "notes": null,
@@ -757,7 +2287,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.18597404100000858,
+      "latency_s": 0.20214408298488706,
       "input_tokens": 592,
       "output_tokens": 46,
       "notes": null,
@@ -774,7 +2304,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.1306567499996163,
+      "latency_s": 0.22378295805538073,
       "input_tokens": 596,
       "output_tokens": 46,
       "notes": null,
@@ -791,7 +2321,7 @@
         "prodsec": 0.0,
         "review": 0.0
       },
-      "latency_s": 0.18656454200390726,
+      "latency_s": 0.1733579159481451,
       "input_tokens": 589,
       "output_tokens": 46,
       "notes": null,
@@ -808,7 +2338,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.39180325000779703,
+      "latency_s": 0.21234141703462228,
       "input_tokens": 598,
       "output_tokens": 47,
       "notes": null,
@@ -825,7 +2355,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.1557037909515202,
+      "latency_s": 0.22592387499753386,
       "input_tokens": 596,
       "output_tokens": 47,
       "notes": null,
@@ -835,14 +2365,14 @@
       "system": "jev",
       "alert_id": "prod3",
       "choice": "prodsec",
-      "confidence": 0.99,
+      "confidence": 1.0,
       "probabilities": {
         "soc": 0.0,
-        "cloud": 0.01,
-        "prodsec": 0.99,
+        "cloud": 0.0,
+        "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.1663340000086464,
+      "latency_s": 0.21051933302078396,
       "input_tokens": 592,
       "output_tokens": 47,
       "notes": null,
@@ -859,7 +2389,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.16810299997450784,
+      "latency_s": 0.25221962499199435,
       "input_tokens": 598,
       "output_tokens": 47,
       "notes": null,
@@ -876,7 +2406,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.14742820797255263,
+      "latency_s": 0.7437166669988073,
       "input_tokens": 590,
       "output_tokens": 47,
       "notes": null,
@@ -893,7 +2423,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.23731529200449586,
+      "latency_s": 0.329270499991253,
       "input_tokens": 589,
       "output_tokens": 47,
       "notes": null,
@@ -910,7 +2440,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.1907535420032218,
+      "latency_s": 0.27580925001529977,
       "input_tokens": 594,
       "output_tokens": 47,
       "notes": null,
@@ -927,7 +2457,7 @@
         "prodsec": 1.0,
         "review": 0.0
       },
-      "latency_s": 0.18284495797706768,
+      "latency_s": 0.4749025829951279,
       "input_tokens": 588,
       "output_tokens": 47,
       "notes": null,
@@ -937,14 +2467,14 @@
       "system": "jev",
       "alert_id": "r1",
       "choice": "soc",
-      "confidence": 0.59,
+      "confidence": 0.61,
       "probabilities": {
-        "soc": 0.69,
+        "soc": 0.71,
         "cloud": 0.0,
         "prodsec": 0.0,
-        "review": 0.31
+        "review": 0.29
       },
-      "latency_s": 0.1879659999976866,
+      "latency_s": 0.24111554201226681,
       "input_tokens": 593,
       "output_tokens": 46,
       "notes": null,
@@ -954,14 +2484,14 @@
       "system": "jev",
       "alert_id": "r2",
       "choice": "review",
-      "confidence": 0.79,
+      "confidence": 0.76,
       "probabilities": {
-        "soc": 0.16,
+        "soc": 0.18,
         "cloud": 0.0,
         "prodsec": 0.0,
-        "review": 0.84
+        "review": 0.82
       },
-      "latency_s": 0.1515944580314681,
+      "latency_s": 0.24114887497853488,
       "input_tokens": 597,
       "output_tokens": 46,
       "notes": null,
@@ -971,14 +2501,14 @@
       "system": "jev",
       "alert_id": "r3",
       "choice": "soc",
-      "confidence": 0.61,
+      "confidence": 0.63,
       "probabilities": {
-        "soc": 0.71,
+        "soc": 0.72,
         "cloud": 0.0,
         "prodsec": 0.0,
-        "review": 0.29
+        "review": 0.28
       },
-      "latency_s": 0.17764279199764132,
+      "latency_s": 0.11015124997356907,
       "input_tokens": 619,
       "output_tokens": 46,
       "notes": null,
@@ -988,14 +2518,14 @@
       "system": "jev",
       "alert_id": "r4",
       "choice": "soc",
-      "confidence": 0.63,
+      "confidence": 0.53,
       "probabilities": {
-        "soc": 0.72,
+        "soc": 0.65,
         "cloud": 0.0,
         "prodsec": 0.0,
-        "review": 0.28
+        "review": 0.35
       },
-      "latency_s": 0.17559091601287946,
+      "latency_s": 0.21181649999925867,
       "input_tokens": 607,
       "output_tokens": 46,
       "notes": null,
@@ -1005,14 +2535,14 @@
       "system": "jev",
       "alert_id": "r5",
       "choice": "review",
-      "confidence": 0.51,
+      "confidence": 0.57,
       "probabilities": {
-        "soc": 0.37,
+        "soc": 0.32,
         "cloud": 0.0,
         "prodsec": 0.0,
-        "review": 0.63
+        "review": 0.68
       },
-      "latency_s": 0.20985162496799603,
+      "latency_s": 0.12820124998688698,
       "input_tokens": 599,
       "output_tokens": 46,
       "notes": null,
@@ -1022,15 +2552,1545 @@
       "system": "jev",
       "alert_id": "r6",
       "choice": "soc",
-      "confidence": 0.35,
+      "confidence": 0.37,
       "probabilities": {
-        "soc": 0.51,
+        "soc": 0.53,
         "cloud": 0.01,
         "prodsec": 0.0,
-        "review": 0.48
+        "review": 0.46
       },
-      "latency_s": 0.179117291001603,
+      "latency_s": 0.11481991701293737,
       "input_tokens": 590,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g88",
+      "choice": "review",
+      "confidence": 0.72,
+      "probabilities": {
+        "soc": 0.21,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.79
+      },
+      "latency_s": 0.1668185829767026,
+      "input_tokens": 593,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g60",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.21503083303105086,
+      "input_tokens": 585,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g15",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.24398262501927093,
+      "input_tokens": 583,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g18",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.2721182499662973,
+      "input_tokens": 591,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g85",
+      "choice": "review",
+      "confidence": 0.96,
+      "probabilities": {
+        "soc": 0.03,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.97
+      },
+      "latency_s": 0.22087270801421255,
+      "input_tokens": 587,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g77",
+      "choice": "review",
+      "confidence": 0.65,
+      "probabilities": {
+        "soc": 0.26,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.74
+      },
+      "latency_s": 0.32524100004229695,
+      "input_tokens": 587,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g53",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.18613966699922457,
+      "input_tokens": 586,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g37",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.21392850001575425,
+      "input_tokens": 585,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g21",
+      "choice": "soc",
+      "confidence": 0.73,
+      "probabilities": {
+        "soc": 0.8,
+        "cloud": 0.2,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.09799362503690645,
+      "input_tokens": 584,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g20",
+      "choice": "soc",
+      "confidence": 0.79,
+      "probabilities": {
+        "soc": 0.84,
+        "cloud": 0.16,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.148865208029747,
+      "input_tokens": 584,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g55",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.2123494590050541,
+      "input_tokens": 581,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g81",
+      "choice": "review",
+      "confidence": 0.43,
+      "probabilities": {
+        "soc": 0.43,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.57
+      },
+      "latency_s": 0.1849591250065714,
+      "input_tokens": 589,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g84",
+      "choice": "review",
+      "confidence": 0.41,
+      "probabilities": {
+        "soc": 0.44,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.56
+      },
+      "latency_s": 0.2537790419883095,
+      "input_tokens": 590,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g3",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.16823312500491738,
+      "input_tokens": 588,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g65",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.1387286669923924,
+      "input_tokens": 581,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g56",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.14917741605313495,
+      "input_tokens": 583,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g40",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.21164683398092166,
+      "input_tokens": 582,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g67",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.3742268750211224,
+      "input_tokens": 588,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g19",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.42008287500357255,
+      "input_tokens": 588,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g8",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.2645792500115931,
+      "input_tokens": 583,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g54",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.23478304099990055,
+      "input_tokens": 585,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g87",
+      "choice": "review",
+      "confidence": 0.37,
+      "probabilities": {
+        "soc": 0.47,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.53
+      },
+      "latency_s": 0.2777431249851361,
+      "input_tokens": 590,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g48",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.5233982920181006,
+      "input_tokens": 582,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g35",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.4688437500153668,
+      "input_tokens": 582,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g33",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.2568171250168234,
+      "input_tokens": 582,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g71",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.24204275000374764,
+      "input_tokens": 588,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g32",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.26207975001307204,
+      "input_tokens": 595,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g76",
+      "choice": "soc",
+      "confidence": 0.95,
+      "probabilities": {
+        "soc": 0.96,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.04
+      },
+      "latency_s": 0.21640633296919987,
+      "input_tokens": 597,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g5",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 1.3675578749971464,
+      "input_tokens": 583,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g24",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.19364024995593354,
+      "input_tokens": 583,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g17",
+      "choice": "soc",
+      "confidence": 0.77,
+      "probabilities": {
+        "soc": 0.83,
+        "cloud": 0.17,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.18382379098329693,
+      "input_tokens": 584,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g7",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.22341454203706235,
+      "input_tokens": 591,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g69",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.3214488329831511,
+      "input_tokens": 588,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g43",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.24411733297165483,
+      "input_tokens": 583,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g72",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.38480204198276624,
+      "input_tokens": 583,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g39",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.6196097079664469,
+      "input_tokens": 600,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g23",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.8135533750173636,
+      "input_tokens": 585,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g59",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.7888291249983013,
+      "input_tokens": 585,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g42",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.5715167919988744,
+      "input_tokens": 582,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g74",
+      "choice": "review",
+      "confidence": 0.89,
+      "probabilities": {
+        "soc": 0.08,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.92
+      },
+      "latency_s": 0.7046157919685356,
+      "input_tokens": 587,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g38",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.698823833023198,
+      "input_tokens": 583,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g10",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.2075135000050068,
+      "input_tokens": 593,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g2",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.8428717500064522,
+      "input_tokens": 593,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g9",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.572120625001844,
+      "input_tokens": 590,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g68",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 1.3524358329595998,
+      "input_tokens": 588,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g66",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.9118546249810606,
+      "input_tokens": 588,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g52",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 21.26415929198265,
+      "input_tokens": 583,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g64",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.31748033402254805,
+      "input_tokens": 588,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g75",
+      "choice": "soc",
+      "confidence": 0.6,
+      "probabilities": {
+        "soc": 0.7,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.3
+      },
+      "latency_s": 0.3360528750345111,
+      "input_tokens": 595,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g73",
+      "choice": "review",
+      "confidence": 0.39,
+      "probabilities": {
+        "soc": 0.46,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.54
+      },
+      "latency_s": 0.2541414590086788,
+      "input_tokens": 595,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g79",
+      "choice": "soc",
+      "confidence": 0.92,
+      "probabilities": {
+        "soc": 0.9400000000000001,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.06
+      },
+      "latency_s": 0.9828447499894537,
+      "input_tokens": 599,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g6",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 28.324496417015325,
+      "input_tokens": 596,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g22",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.6024575409828685,
+      "input_tokens": 595,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g41",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.17151499999454245,
+      "input_tokens": 581,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g63",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.1967956669977866,
+      "input_tokens": 585,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g28",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.2184346669819206,
+      "input_tokens": 582,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g12",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.17307608301052824,
+      "input_tokens": 587,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g57",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.3376730420277454,
+      "input_tokens": 583,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g31",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.12218925001798198,
+      "input_tokens": 581,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g13",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.14726141595747322,
+      "input_tokens": 594,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g49",
+      "choice": "prodsec",
+      "confidence": 0.96,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.03,
+        "prodsec": 0.97,
+        "review": 0.0
+      },
+      "latency_s": 0.1252712500281632,
+      "input_tokens": 585,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g90",
+      "choice": "soc",
+      "confidence": 0.8,
+      "probabilities": {
+        "soc": 0.85,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.15
+      },
+      "latency_s": 0.1365442500100471,
+      "input_tokens": 589,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g51",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.14801329199690372,
+      "input_tokens": 583,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g50",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.12996633298462257,
+      "input_tokens": 583,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g16",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.18052741698920727,
+      "input_tokens": 586,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g83",
+      "choice": "review",
+      "confidence": 0.73,
+      "probabilities": {
+        "soc": 0.2,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.8
+      },
+      "latency_s": 0.20028562500374392,
+      "input_tokens": 593,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g80",
+      "choice": "review",
+      "confidence": 0.89,
+      "probabilities": {
+        "soc": 0.08,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.92
+      },
+      "latency_s": 0.19712916598655283,
+      "input_tokens": 587,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g70",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.11496949999127537,
+      "input_tokens": 585,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g1",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.15271549997851253,
+      "input_tokens": 585,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g62",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.1836325000040233,
+      "input_tokens": 586,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g27",
+      "choice": "cloud",
+      "confidence": 0.99,
+      "probabilities": {
+        "soc": 0.01,
+        "cloud": 0.99,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.12444479198893532,
+      "input_tokens": 584,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g44",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.19925212499219924,
+      "input_tokens": 595,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g26",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.13196766696637496,
+      "input_tokens": 587,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g86",
+      "choice": "soc",
+      "confidence": 0.71,
+      "probabilities": {
+        "soc": 0.78,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.22
+      },
+      "latency_s": 0.12251029099570587,
+      "input_tokens": 598,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g30",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.2112770410021767,
+      "input_tokens": 595,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g14",
+      "choice": "soc",
+      "confidence": 0.43,
+      "probabilities": {
+        "soc": 0.57,
+        "cloud": 0.43,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.15135170798748732,
+      "input_tokens": 581,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g29",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.12006329098949209,
+      "input_tokens": 587,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g11",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.15308195899706334,
+      "input_tokens": 593,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g47",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.14289200003258884,
+      "input_tokens": 587,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g82",
+      "choice": "soc",
+      "confidence": 0.49,
+      "probabilities": {
+        "soc": 0.62,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.38
+      },
+      "latency_s": 0.189235917001497,
+      "input_tokens": 588,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g58",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.12875358399469405,
+      "input_tokens": 585,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g45",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.17721020901808515,
+      "input_tokens": 582,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g78",
+      "choice": "soc",
+      "confidence": 0.45,
+      "probabilities": {
+        "soc": 0.59,
+        "cloud": 0.01,
+        "prodsec": 0.0,
+        "review": 0.4
+      },
+      "latency_s": 0.13461649999953806,
+      "input_tokens": 590,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g25",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.8853820420335978,
+      "input_tokens": 595,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g34",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.14866416703443974,
+      "input_tokens": 581,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g61",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 0.0,
+        "prodsec": 1.0,
+        "review": 0.0
+      },
+      "latency_s": 0.4999233750277199,
+      "input_tokens": 585,
+      "output_tokens": 47,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g36",
+      "choice": "cloud",
+      "confidence": 0.99,
+      "probabilities": {
+        "soc": 0.01,
+        "cloud": 0.99,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.16332012502243742,
+      "input_tokens": 584,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g89",
+      "choice": "review",
+      "confidence": 0.99,
+      "probabilities": {
+        "soc": 0.01,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.99
+      },
+      "latency_s": 0.3402374589932151,
+      "input_tokens": 580,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g4",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 1.0,
+        "cloud": 0.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 1.4612310840166174,
+      "input_tokens": 583,
+      "output_tokens": 46,
+      "notes": null,
+      "error": null
+    },
+    {
+      "system": "jev",
+      "alert_id": "g46",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": {
+        "soc": 0.0,
+        "cloud": 1.0,
+        "prodsec": 0.0,
+        "review": 0.0
+      },
+      "latency_s": 0.16056283301441,
+      "input_tokens": 584,
       "output_tokens": 46,
       "notes": null,
       "error": null
@@ -1041,10 +4101,10 @@
       "choice": "soc",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.013666791957803,
+      "latency_s": 23.404707374982536,
       "input_tokens": 364,
-      "output_tokens": 50,
-      "notes": "The alert describes endpoint malware and process injection involving mimikatz on a workstation, which falls under SOC ownership.",
+      "output_tokens": 45,
+      "notes": "The alert describes endpoint malware activity involving process injection and credential dumping on a corporate workstation.",
       "error": null
     },
     {
@@ -1053,10 +4113,10 @@
       "choice": "soc",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.628771040996071,
+      "latency_s": 10.4444215829717,
       "input_tokens": 366,
-      "output_tokens": 57,
-      "notes": "The alert involves internal network lateral movement, host-based IDS detection, and pass-the-hash activity, which fall directly under SOC scope.",
+      "output_tokens": 56,
+      "notes": "The alert describes internal network lateral movement and suspicious authentication patterns on hosts, which falls directly under SOC day-to-day detection and response.",
       "error": null
     },
     {
@@ -1065,10 +4125,10 @@
       "choice": "soc",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.7013863750034943,
+      "latency_s": 6.8821764580206946,
       "input_tokens": 354,
-      "output_tokens": 48,
-      "notes": "Ransomware canary file modification and lateral spreading on an internal file server is handled by the SOC.",
+      "output_tokens": 51,
+      "notes": "The alert describes host malware and ransomware activity on an on-prem file server, which is handled by the SOC.",
       "error": null
     },
     {
@@ -1077,10 +4137,10 @@
       "choice": "soc",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.2349622920155525,
+      "latency_s": 5.7826768750092015,
       "input_tokens": 375,
-      "output_tokens": 54,
-      "notes": "The alert involves endpoint malware detection and command-and-control beaconing from a corporate laptop, which falls directly under SOC ownership.",
+      "output_tokens": 46,
+      "notes": "The alert describes endpoint malware and beaconing activity detected by EDR on a corporate host.",
       "error": null
     },
     {
@@ -1089,10 +4149,10 @@
       "choice": "soc",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 0.8213395830243826,
+      "latency_s": 11.573832708003465,
       "input_tokens": 369,
       "output_tokens": 41,
-      "notes": "Phishing and email-borne threats are owned by the SOC.",
+      "notes": "The alert is a user-reported phishing email, which falls under day-to-day SOC operations.",
       "error": null
     },
     {
@@ -1101,10 +4161,10 @@
       "choice": "soc",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 0.8920578340184875,
+      "latency_s": 8.279436374956276,
       "input_tokens": 359,
-      "output_tokens": 45,
-      "notes": "The alert describes a phishing and email-borne threat involving CEO impersonation and BEC.",
+      "output_tokens": 36,
+      "notes": "CEO-impersonation and phishing emails are explicitly owned by the SOC team.",
       "error": null
     },
     {
@@ -1113,10 +4173,10 @@
       "choice": "soc",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 0.9182704589911737,
+      "latency_s": 5.4740589580032974,
       "input_tokens": 362,
-      "output_tokens": 46,
-      "notes": "The alert describes an email-borne malware threat involving a malicious attachment flagged by Proofpoint.",
+      "output_tokens": 53,
+      "notes": "The alert describes an email-borne malware threat (Qakbot via phishing/attachment) which is owned by the SOC.",
       "error": null
     },
     {
@@ -1125,7 +4185,7 @@
       "choice": "soc",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.5930835409672,
+      "latency_s": 5.4425295410328545,
       "input_tokens": 348,
       "output_tokens": 42,
       "notes": "Phishing and credential harvesting via email are handled directly by the SOC.",
@@ -1137,10 +4197,10 @@
       "choice": "cloud",
       "confidence": 0.95,
       "probabilities": null,
-      "latency_s": 3.1578610830474645,
+      "latency_s": 6.308211916999426,
       "input_tokens": 362,
-      "output_tokens": 44,
-      "notes": "The alert involves AWS IAM API calls and resource creation in a cloud environment.",
+      "output_tokens": 51,
+      "notes": "The alert involves AWS IAM API calls and resource manipulation in the cloud environment, which falls directly under Cloud Security.",
       "error": null
     },
     {
@@ -1149,22 +4209,22 @@
       "choice": "cloud",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 0.7539362080278806,
+      "latency_s": 5.153667040984146,
       "input_tokens": 355,
-      "output_tokens": 48,
-      "notes": "S3 bucket misconfiguration and public-read ACL changes are explicitly owned by the Cloud Security team.",
+      "output_tokens": 49,
+      "notes": "The alert involves an AWS S3 bucket ACL change making objects public, which falls directly under Cloud Security.",
       "error": null
     },
     {
       "system": "gemini",
       "alert_id": "cloud3",
       "choice": "cloud",
-      "confidence": 0.95,
+      "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.7665936250123195,
+      "latency_s": 10.678463999996893,
       "input_tokens": 352,
-      "output_tokens": 56,
-      "notes": "The alert involves an Okta impossible-travel sign-in, which falls under SaaS identity provider threats owned by the Cloud Security team.",
+      "output_tokens": 51,
+      "notes": "The alert involves an Okta SaaS identity provider sign-in anomaly, which is owned by the Cloud Security team.",
       "error": null
     },
     {
@@ -1173,22 +4233,22 @@
       "choice": "cloud",
       "confidence": 0.95,
       "probabilities": null,
-      "latency_s": 5.600882833008654,
+      "latency_s": 15.605563041986898,
       "input_tokens": 356,
-      "output_tokens": 52,
-      "notes": "The alert involves Azure AD and SaaS identity provider OAuth app consent grants, which are owned by the Cloud Security team.",
+      "output_tokens": 46,
+      "notes": "The alert involves SaaS identity provider OAuth app consent grants, which fall under Cloud Security.",
       "error": null
     },
     {
       "system": "gemini",
       "alert_id": "cloud5",
       "choice": "cloud",
-      "confidence": 1.0,
+      "confidence": 0.95,
       "probabilities": null,
-      "latency_s": 4.534951583947986,
+      "latency_s": 10.396376457996666,
       "input_tokens": 352,
-      "output_tokens": 44,
-      "notes": "The alert describes anomalous AWS CloudTrail activity involving a Lambda function and secrets retrieval.",
+      "output_tokens": 51,
+      "notes": "The alert is triggered by CloudTrail activity involving AWS Lambda and Secrets Manager, which falls under cloud platform threats.",
       "error": null
     },
     {
@@ -1197,7 +4257,7 @@
       "choice": "cloud",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.0860572500387207,
+      "latency_s": 5.191423791984562,
       "input_tokens": 350,
       "output_tokens": 48,
       "notes": "The alert describes suspicious activity involving Google Cloud Platform (GCP) service accounts and storage buckets.",
@@ -1209,10 +4269,10 @@
       "choice": "cloud",
       "confidence": 0.95,
       "probabilities": null,
-      "latency_s": 0.9130684999981895,
+      "latency_s": 9.353108583018184,
       "input_tokens": 357,
-      "output_tokens": 48,
-      "notes": "The alert involves Entra ID, which falls under SaaS identity providers and cloud security ownership.",
+      "output_tokens": 56,
+      "notes": "The alert involves an Entra ID sign-in anomaly and conditional-access bypass, which falls under SaaS identity and cloud security ownership.",
       "error": null
     },
     {
@@ -1221,10 +4281,10 @@
       "choice": "cloud",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 0.9244282500003465,
+      "latency_s": 7.199149249994662,
       "input_tokens": 347,
-      "output_tokens": 48,
-      "notes": "The alert concerns AWS root-account activity and CloudTrail, which falls under cloud platform security.",
+      "output_tokens": 42,
+      "notes": "The alert pertains directly to AWS cloud infrastructure and IAM root account activity.",
       "error": null
     },
     {
@@ -1233,10 +4293,10 @@
       "choice": "prodsec",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 0.968863083049655,
+      "latency_s": 6.2522600830416195,
       "input_tokens": 356,
-      "output_tokens": 52,
-      "notes": "SAST flagging a SQL injection vulnerability in a pull request for the checkout-service is a classic application security finding.",
+      "output_tokens": 55,
+      "notes": "SAST flagging a SQL injection in a pull request for the checkout-service is a classic application security issue handled by Product Security.",
       "error": null
     },
     {
@@ -1245,10 +4305,10 @@
       "choice": "prodsec",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 0.9223011250142008,
+      "latency_s": 6.7322820000117645,
       "input_tokens": 353,
-      "output_tokens": 52,
-      "notes": "The alert relates to a vulnerable dependency in shipped product code found by a dependency scanner, which falls under Product Security.",
+      "output_tokens": 50,
+      "notes": "The alert involves a vulnerable dependency CVE in a shipped application microservice, which is owned by Product Security.",
       "error": null
     },
     {
@@ -1257,10 +4317,10 @@
       "choice": "prodsec",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 0.7177254580310546,
+      "latency_s": 9.00465629203245,
       "input_tokens": 352,
-      "output_tokens": 41,
-      "notes": "Secrets committed to source code repositories are handled by Product Security.",
+      "output_tokens": 33,
+      "notes": "Secrets committed to source code repositories are owned by Product Security.",
       "error": null
     },
     {
@@ -1269,22 +4329,22 @@
       "choice": "prodsec",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 0.6465252079651691,
+      "latency_s": 9.48239849996753,
       "input_tokens": 356,
-      "output_tokens": 52,
-      "notes": "The alert is an inbound bug-bounty report about an insecure API endpoint and IDOR vulnerability in the product.",
+      "output_tokens": 46,
+      "notes": "The alert is an inbound bug-bounty finding regarding an insecure API endpoint vulnerability.",
       "error": null
     },
     {
       "system": "gemini",
       "alert_id": "prod5",
       "choice": "prodsec",
-      "confidence": 0.95,
+      "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.0916536659933627,
+      "latency_s": 9.306464083958417,
       "input_tokens": 350,
-      "output_tokens": 55,
-      "notes": "The alert describes CI/CD pipeline tampering and an injected build step during a production build, which falls directly under Product Security.",
+      "output_tokens": 48,
+      "notes": "The alert describes CI/CD pipeline tampering and release pipeline modification, which falls under Product Security.",
       "error": null
     },
     {
@@ -1293,10 +4353,10 @@
       "choice": "prodsec",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.0843148329877295,
+      "latency_s": 10.621495125000365,
       "input_tokens": 347,
-      "output_tokens": 42,
-      "notes": "Container image vulnerabilities and base image issues are owned by Product Security.",
+      "output_tokens": 46,
+      "notes": "Container-image vulnerabilities and base image issues in shipped software are owned by Product Security.",
       "error": null
     },
     {
@@ -1305,10 +4365,10 @@
       "choice": "prodsec",
       "confidence": 1.0,
       "probabilities": null,
-      "latency_s": 1.0172734590014443,
+      "latency_s": 1.4007264589890838,
       "input_tokens": 352,
-      "output_tokens": 46,
-      "notes": "DAST scan findings and application vulnerabilities in the customer portal are owned by Product Security.",
+      "output_tokens": 55,
+      "notes": "The alert involves a DAST finding of a cross-site scripting vulnerability on the customer portal, which falls directly under Product Security.",
       "error": null
     },
     {
@@ -1317,10 +4377,10 @@
       "choice": "prodsec",
       "confidence": 0.95,
       "probabilities": null,
-      "latency_s": 0.7586142910295166,
+      "latency_s": 4.269256750005297,
       "input_tokens": 347,
-      "output_tokens": 37,
-      "notes": "The alert concerns an application vulnerability and misconfiguration in the production web application.",
+      "output_tokens": 52,
+      "notes": "The alert concerns a vulnerability in the organization's own production web application regarding exposed stack traces and API keys.",
       "error": null
     },
     {
@@ -1329,10 +4389,10 @@
       "choice": "review",
       "confidence": 0.3,
       "probabilities": null,
-      "latency_s": 0.8871986669837497,
+      "latency_s": 7.191940666991286,
       "input_tokens": 350,
-      "output_tokens": 40,
-      "notes": "The alert lacks sufficient detail to determine the appropriate security team.",
+      "output_tokens": 36,
+      "notes": "The alert lacks sufficient context regarding the type of anomalous activity to route it reliably.",
       "error": null
     },
     {
@@ -1341,58 +4401,1138 @@
       "choice": "review",
       "confidence": 0.2,
       "probabilities": null,
-      "latency_s": 0.7740195000078529,
+      "latency_s": 10.501513750001322,
       "input_tokens": 355,
       "output_tokens": 43,
-      "notes": "The alert text is truncated and lacks sufficient detail to assign a definitive owner.",
+      "notes": "The alert text is truncated and lacks sufficient detail to assign a specific owner.",
       "error": null
     },
     {
       "system": "gemini",
       "alert_id": "r3",
       "choice": "review",
-      "confidence": 0.2,
+      "confidence": 0.3,
       "probabilities": null,
-      "latency_s": 0.7622067499905825,
+      "latency_s": 6.003489875001833,
       "input_tokens": 377,
-      "output_tokens": 44,
-      "notes": "The alert is a generic firewall log lacking sufficient context for a definitive routing decision.",
+      "output_tokens": 48,
+      "notes": "The raw syslog lacks sufficient context regarding the destination, internal host, or specific threat to route reliably.",
       "error": null
     },
     {
       "system": "gemini",
       "alert_id": "r4",
       "choice": "review",
-      "confidence": 0.5,
+      "confidence": 0.3,
       "probabilities": null,
-      "latency_s": 25.703994416981004,
+      "latency_s": 5.163221291033551,
       "input_tokens": 364,
-      "output_tokens": 43,
-      "notes": "The alert lacks sufficient context regarding the originating source system to route it reliably.",
+      "output_tokens": 45,
+      "notes": "The alert lacks enough context about the originating source system to determine the correct security team.",
       "error": null
     },
     {
       "system": "gemini",
       "alert_id": "r5",
       "choice": "review",
-      "confidence": 0.5,
+      "confidence": 0.9,
       "probabilities": null,
-      "latency_s": 20.888655166956596,
+      "latency_s": 10.482625083008315,
       "input_tokens": 357,
-      "output_tokens": 39,
-      "notes": "The user-submitted ticket is too vague and lacks specific technical artifacts or logs to route reliably.",
+      "output_tokens": 43,
+      "notes": "The ticket is vague and lacks sufficient technical artifacts or details to determine ownership.",
       "error": null
     },
     {
       "system": "gemini",
       "alert_id": "r6",
       "choice": "review",
+      "confidence": 0.4,
+      "probabilities": null,
+      "latency_s": 2.222484500030987,
+      "input_tokens": 348,
+      "output_tokens": 49,
+      "notes": "The alert lacks specific context regarding the destination, channel, and data involved, requiring human analysis to route.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g88",
+      "choice": "review",
       "confidence": 0.3,
       "probabilities": null,
-      "latency_s": 0.8172645419836044,
-      "input_tokens": 348,
+      "latency_s": 9.170379417017102,
+      "input_tokens": 350,
+      "output_tokens": 35,
+      "notes": "The alert text is truncated and lacks the specific details needed to route reliably.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g60",
+      "choice": "prodsec",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 11.276857417018618,
+      "input_tokens": 346,
       "output_tokens": 50,
-      "notes": "The alert lacks critical details such as destination and channel, and indicates a degraded connector state, making it ambiguous.",
+      "notes": "The alert describes CI/CD pipeline tampering in a software release pipeline, which falls under Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g15",
+      "choice": "soc",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 10.33381629199721,
+      "input_tokens": 343,
+      "output_tokens": 42,
+      "notes": "Phishing and email-borne threats are handled by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g18",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 7.053567583963741,
+      "input_tokens": 347,
+      "output_tokens": 42,
+      "notes": "Phishing and email-borne threats are explicitly owned by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g85",
+      "choice": "review",
+      "confidence": 0.2,
+      "probabilities": null,
+      "latency_s": 9.274436666979454,
+      "input_tokens": 345,
+      "output_tokens": 48,
+      "notes": "The alert lacks critical details such as source, destination, and channel to determine the correct security team.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g77",
+      "choice": "review",
+      "confidence": 0.2,
+      "probabilities": null,
+      "latency_s": 13.87540712498594,
+      "input_tokens": 344,
+      "output_tokens": 45,
+      "notes": "The alert lacks specific context regarding the source system and environment where the IOC was observed.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g53",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 9.560856500000227,
+      "input_tokens": 345,
+      "output_tokens": 49,
+      "notes": "Container-image vulnerabilities and configuration issues in the organization's own product are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g37",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 9.49406033399282,
+      "input_tokens": 344,
+      "output_tokens": 49,
+      "notes": "Entra ID is a cloud identity provider, which falls under the ownership of the Cloud Security team.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g21",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 12.362051833013538,
+      "input_tokens": 343,
+      "output_tokens": 41,
+      "notes": "Phishing and credential submission via email is handled by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g20",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 15.615858583012596,
+      "input_tokens": 343,
+      "output_tokens": 49,
+      "notes": "The alert describes a phishing attack involving an email link and credential submission, which is handled by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g55",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 6.3424687089864165,
+      "input_tokens": 341,
+      "output_tokens": 46,
+      "notes": "DAST finding of a reflected XSS on the customer portal belongs to Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g81",
+      "choice": "review",
+      "confidence": 0.5,
+      "probabilities": null,
+      "latency_s": 6.264650291996077,
+      "input_tokens": 348,
+      "output_tokens": 42,
+      "notes": "The alert lacks sufficient detail regarding the source system to reliably route it.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g84",
+      "choice": "review",
+      "confidence": 0.3,
+      "probabilities": null,
+      "latency_s": 9.139057749998756,
+      "input_tokens": 346,
+      "output_tokens": 41,
+      "notes": "The alert is missing crucial destination and channel details due to truncation.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g3",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 10.521587832947262,
+      "input_tokens": 344,
+      "output_tokens": 48,
+      "notes": "Ransomware and endpoint-based file encryption affecting network shares fall under daily SOC monitoring and response.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g65",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 10.790345124958549,
+      "input_tokens": 341,
+      "output_tokens": 46,
+      "notes": "DAST finding of a reflected XSS on the customer portal belongs to Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g56",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 12.782879499951378,
+      "input_tokens": 343,
+      "output_tokens": 42,
+      "notes": "Vulnerable dependencies in shipped software code are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g40",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 8.746365000028163,
+      "input_tokens": 343,
+      "output_tokens": 38,
+      "notes": "Storage bucket ACL changes directly involve cloud infrastructure security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g67",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 10.608391457994003,
+      "input_tokens": 345,
+      "output_tokens": 53,
+      "notes": "The alert is a bug bounty report regarding an insecure API endpoint and IDOR vulnerability in the organization's own software.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g19",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 11.380687791039236,
+      "input_tokens": 344,
+      "output_tokens": 50,
+      "notes": "Ransomware-style file encryption on a workstation falls directly under endpoint and host malware handled by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g8",
+      "choice": "soc",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 16.580736333038658,
+      "input_tokens": 343,
+      "output_tokens": 56,
+      "notes": "CEO-impersonation wire-transfer requests via email fall directly under email-borne phishing and social engineering threats managed by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g54",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 11.580846541037317,
+      "input_tokens": 342,
+      "output_tokens": 45,
+      "notes": "SAST alerts on pull requests for application source code are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g87",
+      "choice": "review",
+      "confidence": 0.5,
+      "probabilities": null,
+      "latency_s": 4.079828250047285,
+      "input_tokens": 349,
+      "output_tokens": 43,
+      "notes": "The alert lacks sufficient context regarding the source system to reliably route the investigation.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g48",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 8.128006999962963,
+      "input_tokens": 340,
+      "output_tokens": 43,
+      "notes": "The alert describes a GCP console login, which falls under Cloud Security ownership.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g35",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 12.195649083005264,
+      "input_tokens": 340,
+      "output_tokens": 46,
+      "notes": "The alert describes a GCP console login without MFA, which falls directly under cloud platform security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g33",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 9.159765792021062,
+      "input_tokens": 340,
+      "output_tokens": 46,
+      "notes": "The alert describes a GCP console login without MFA, which falls directly under cloud platform threats.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g71",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 7.626731584023219,
+      "input_tokens": 345,
+      "output_tokens": 51,
+      "notes": "The alert describes a container-image vulnerability and insecure configuration in production software, which is owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g32",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 9.397138208965771,
+      "input_tokens": 347,
+      "output_tokens": 48,
+      "notes": "The alert describes anomalous Azure IAM activity including credential creation and policy attachment from a new IP.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g76",
+      "choice": "soc",
+      "confidence": 0.8,
+      "probabilities": null,
+      "latency_s": 9.18733612500364,
+      "input_tokens": 354,
+      "output_tokens": 49,
+      "notes": "The alert involves anomalous activity on a workstation asset, which falls under corporate endpoint monitoring managed by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g5",
+      "choice": "soc",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 2.8500881669460796,
+      "input_tokens": 343,
+      "output_tokens": 41,
+      "notes": "Business email compromise and phishing attacks are handled by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g24",
+      "choice": "soc",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 3.999553166970145,
+      "input_tokens": 343,
+      "output_tokens": 46,
+      "notes": "Business email compromise and CEO-impersonation phishing attacks are handled by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g17",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 9.490356916969176,
+      "input_tokens": 343,
+      "output_tokens": 44,
+      "notes": "Phishing and credential harvesting via email directly fall under the SOC's purview.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g7",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 8.026026999985334,
+      "input_tokens": 348,
+      "output_tokens": 56,
+      "notes": "The alert involves host-level malware and credential access on an on-premise server, which falls squarely under the SOC's purview.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g69",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 8.065827583021019,
+      "input_tokens": 345,
+      "output_tokens": 50,
+      "notes": "Inbound bug-bounty findings against the company's own product APIs are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g43",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 8.629659708007239,
+      "input_tokens": 340,
+      "output_tokens": 49,
+      "notes": "The alert explicitly concerns GCP service-account key creation and usage, which falls under cloud platform security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g72",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 8.959887749981135,
+      "input_tokens": 342,
+      "output_tokens": 48,
+      "notes": "The alert is for a SAST finding of SQL injection in a code repository pull request.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g39",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 5.4052595410030335,
+      "input_tokens": 351,
+      "output_tokens": 46,
+      "notes": "The alert involves AWS IAM API calls and resource management, which falls directly under Cloud Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g23",
+      "choice": "soc",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 4.6373792919912376,
+      "input_tokens": 343,
+      "output_tokens": 43,
+      "notes": "Email-borne threats and malware loaders are explicitly owned by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g59",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 7.689263249980286,
+      "input_tokens": 346,
+      "output_tokens": 44,
+      "notes": "CI/CD pipeline tampering and release pipeline modifications are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g42",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 6.198829917004332,
+      "input_tokens": 343,
+      "output_tokens": 43,
+      "notes": "Storage bucket ACL modifications and public exposures are owned by the Cloud Security team.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g74",
+      "choice": "review",
+      "confidence": 0.2,
+      "probabilities": null,
+      "latency_s": 8.65425070899073,
+      "input_tokens": 345,
+      "output_tokens": 43,
+      "notes": "The alert is extremely vague and lacks sufficient context to determine the proper team.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g38",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 3.615882124984637,
+      "input_tokens": 343,
+      "output_tokens": 48,
+      "notes": "Azure AD sign-in anomalies fall under cloud and SaaS platform threats managed by the Cloud Security team.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g10",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 4.90580908296397,
+      "input_tokens": 351,
+      "output_tokens": 55,
+      "notes": "The alert involves endpoint malware execution and C2 beaconing on a corporate laptop, which falls under day-to-day SOC operations.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g2",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 8.277569041994866,
+      "input_tokens": 350,
+      "output_tokens": 45,
+      "notes": "Endpoint malware and LSASS memory access on a corporate host fall directly under SOC ownership.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g9",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 18.55711129202973,
+      "input_tokens": 347,
+      "output_tokens": 45,
+      "notes": "The alert involves host malware and process injection flagged by EDR on an internal server.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g68",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 9.69287670898484,
+      "input_tokens": 345,
+      "output_tokens": 49,
+      "notes": "Inbound bug-bounty findings regarding application API vulnerabilities like IDOR are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g66",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 9.158006083976943,
+      "input_tokens": 345,
+      "output_tokens": 55,
+      "notes": "Inbound bug-bounty findings regarding unauthenticated endpoints and IDOR on the organization's API are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g52",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 6.682069541013334,
+      "input_tokens": 343,
+      "output_tokens": 46,
+      "notes": "The alert involves a vulnerable dependency in shipped product code, which falls under Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g64",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 7.110504415992182,
+      "input_tokens": 345,
+      "output_tokens": 51,
+      "notes": "The alert is an inbound bug-bounty finding regarding an insecure API endpoint in the organization's product.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g75",
+      "choice": "soc",
+      "confidence": 0.8,
+      "probabilities": null,
+      "latency_s": 7.326641249994282,
+      "input_tokens": 352,
+      "output_tokens": 57,
+      "notes": "The alert involves anomalous activity on an internal server asset (SRV-FS78), which falls under day-to-day SOC monitoring.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g73",
+      "choice": "review",
+      "confidence": 0.2,
+      "probabilities": null,
+      "latency_s": 4.655909667024389,
+      "input_tokens": 352,
+      "output_tokens": 43,
+      "notes": "The alert is extremely sparse and lacks the detail needed to assign an owner.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g79",
+      "choice": "review",
+      "confidence": 0.3,
+      "probabilities": null,
+      "latency_s": 5.669177042029332,
+      "input_tokens": 355,
+      "output_tokens": 48,
+      "notes": "The alert mentions a degraded integration state and lacks sufficient details about the actual security event to route reliably.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g6",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 9.029954124998767,
+      "input_tokens": 354,
+      "output_tokens": 44,
+      "notes": "Endpoint malware and C2 beaconing alerts on workstations are owned by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g22",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 7.88639429199975,
+      "input_tokens": 353,
+      "output_tokens": 50,
+      "notes": "The alert describes host-based malware activity on an endpoint detected by EDR, which falls under SOC ownership.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g41",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 5.9206001670099795,
+      "input_tokens": 342,
+      "output_tokens": 38,
+      "notes": "Storage bucket ACL changes directly involve cloud infrastructure security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g63",
+      "choice": "prodsec",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 9.119639625016134,
+      "input_tokens": 346,
+      "output_tokens": 45,
+      "notes": "CI/CD pipeline tampering and release pipeline modifications fall directly under Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g28",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 3.754910124989692,
+      "input_tokens": 339,
+      "output_tokens": 56,
+      "notes": "The alert involves an Azure service-account key creation and usage from an unrecognized ASN, which falls directly under cloud and SaaS platform threats.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g12",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 5.518996125028934,
+      "input_tokens": 343,
+      "output_tokens": 45,
+      "notes": "Ransomware and endpoint antivirus alerts on internal hosts are handled directly by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g57",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 4.899337999988347,
+      "input_tokens": 343,
+      "output_tokens": 42,
+      "notes": "Secrets committed to a source code repository are handled by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g31",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 5.6487689999630675,
+      "input_tokens": 339,
+      "output_tokens": 45,
+      "notes": "The alert describes an Azure console login and IAM event which falls directly under Cloud Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g13",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 7.961358333996031,
+      "input_tokens": 352,
+      "output_tokens": 50,
+      "notes": "The alert involves an endpoint EDR detection of an unsigned binary and C2 beaconing on a corporate workstation.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g49",
+      "choice": "prodsec",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 9.715437959006522,
+      "input_tokens": 343,
+      "output_tokens": 42,
+      "notes": "Secrets committed to source code repositories are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g90",
+      "choice": "review",
+      "confidence": 0.3,
+      "probabilities": null,
+      "latency_s": 6.091702750010882,
+      "input_tokens": 349,
+      "output_tokens": 53,
+      "notes": "The alert text indicates sub-events are referenced but the integration is reporting a degraded state, leaving insufficient context to route reliably.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g51",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 9.134100833965931,
+      "input_tokens": 342,
+      "output_tokens": 44,
+      "notes": "SAST findings on pull requests for application code fall directly under Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g50",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 6.123427167010959,
+      "input_tokens": 343,
+      "output_tokens": 41,
+      "notes": "The alert concerns a vulnerable dependency in a custom software product.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g16",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 9.739259290974587,
+      "input_tokens": 342,
+      "output_tokens": 34,
+      "notes": "Phishing and email-borne malware threats are owned by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g83",
+      "choice": "review",
+      "confidence": 0.2,
+      "probabilities": null,
+      "latency_s": 11.67606337502366,
+      "input_tokens": 350,
+      "output_tokens": 45,
+      "notes": "The alert text explicitly states that details are truncated, leaving insufficient context to route reliably.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g80",
+      "choice": "review",
+      "confidence": 0.2,
+      "probabilities": null,
+      "latency_s": 6.750512458034791,
+      "input_tokens": 344,
+      "output_tokens": 48,
+      "notes": "The alert lacks specific context regarding where the IOC was observed, making it impossible to route reliably.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g70",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 6.866654791985638,
+      "input_tokens": 342,
+      "output_tokens": 45,
+      "notes": "SAST findings on pull requests for internal software clearly fall under Product Security ownership.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g1",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 6.020893374981824,
+      "input_tokens": 343,
+      "output_tokens": 42,
+      "notes": "Phishing and email-borne malware threats are owned by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g62",
+      "choice": "prodsec",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 7.819587917008903,
+      "input_tokens": 345,
+      "output_tokens": 44,
+      "notes": "Container-image vulnerabilities in shipped application services are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g27",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 7.399255541968159,
+      "input_tokens": 343,
+      "output_tokens": 36,
+      "notes": "Azure AD and identity provider sign-in alerts are owned by Cloud Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g44",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 7.665824832976796,
+      "input_tokens": 348,
+      "output_tokens": 43,
+      "notes": "The alert describes anomalous IAM activity in GCP involving API calls and policy attachments.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g26",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 8.963110999960918,
+      "input_tokens": 346,
+      "output_tokens": 48,
+      "notes": "The alert involves Entra ID, a SaaS identity provider, which falls under Cloud Security ownership.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g86",
+      "choice": "review",
+      "confidence": 0.3,
+      "probabilities": null,
+      "latency_s": 8.618415375007316,
+      "input_tokens": 353,
+      "output_tokens": 40,
+      "notes": "The alert is explicitly truncated at the forwarder and lacks the detail needed to assign a definitive owner.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g30",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 6.478583249961957,
+      "input_tokens": 348,
+      "output_tokens": 44,
+      "notes": "The alert describes anomalous IAM activity in GCP, which falls directly under cloud security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g14",
+      "choice": "soc",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 20.263466249976773,
+      "input_tokens": 340,
+      "output_tokens": 42,
+      "notes": "Phishing and credential harvesting via email are handled by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g29",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 9.1760518749943,
+      "input_tokens": 342,
+      "output_tokens": 54,
+      "notes": "The alert originates from AWS GuardDuty regarding service-account key creation and usage from an unrecognized ASN, which falls under cloud security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g11",
+      "choice": "soc",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 8.67713912500767,
+      "input_tokens": 352,
+      "output_tokens": 48,
+      "notes": "The alert describes lateral movement and internal network IDS activity via SMB, which falls under SOC ownership.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g47",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 8.150525040982757,
+      "input_tokens": 346,
+      "output_tokens": 49,
+      "notes": "The alert involves Entra ID, which is a SaaS identity provider managed by the Cloud Security team.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g82",
+      "choice": "review",
+      "confidence": 0.2,
+      "probabilities": null,
+      "latency_s": 8.802922957984265,
+      "input_tokens": 345,
+      "output_tokens": 37,
+      "notes": "The alert lacks specific context regarding where the IOC was observed or which system is degraded.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g58",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 8.2952142500435,
+      "input_tokens": 343,
+      "output_tokens": 48,
+      "notes": "Vulnerable dependencies and CVEs in shipped code or application services are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g45",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 11.156766583037097,
+      "input_tokens": 339,
+      "output_tokens": 56,
+      "notes": "The alert involves an Azure service-account key creation and usage from an unrecognized ASN, which falls directly under cloud and SaaS platform security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g78",
+      "choice": "review",
+      "confidence": 0.3,
+      "probabilities": null,
+      "latency_s": 14.20071674999781,
+      "input_tokens": 347,
+      "output_tokens": 46,
+      "notes": "The alert lacks sufficient context regarding the destination and channel, and mentions a degraded integration state.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g25",
+      "choice": "cloud",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 8.740549916983582,
+      "input_tokens": 347,
+      "output_tokens": 45,
+      "notes": "The alert describes anomalous IAM activities within Azure, which falls directly under Cloud Security ownership.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g34",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 4.123724959034007,
+      "input_tokens": 339,
+      "output_tokens": 40,
+      "notes": "Azure console login alerts pertain directly to cloud platform security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g61",
+      "choice": "prodsec",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 6.462911417009309,
+      "input_tokens": 343,
+      "output_tokens": 32,
+      "notes": "Secrets committed to source repositories are owned by Product Security.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g36",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 12.979673124966212,
+      "input_tokens": 344,
+      "output_tokens": 45,
+      "notes": "Azure AD sign-in alerts fall under SaaS identity providers and cloud security management.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g89",
+      "choice": "review",
+      "confidence": 1.0,
+      "probabilities": null,
+      "latency_s": 7.87620933400467,
+      "input_tokens": 339,
+      "output_tokens": 44,
+      "notes": "The alert is completely ambiguous and lacks any technical details to determine the correct team.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g4",
+      "choice": "soc",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 11.43478499999037,
+      "input_tokens": 343,
+      "output_tokens": 52,
+      "notes": "CEO-impersonation wire-transfer requests via email are classified as email-borne threats handled by the SOC.",
+      "error": null
+    },
+    {
+      "system": "gemini",
+      "alert_id": "g46",
+      "choice": "cloud",
+      "confidence": 0.95,
+      "probabilities": null,
+      "latency_s": 7.386691916966811,
+      "input_tokens": 344,
+      "output_tokens": 49,
+      "notes": "Entra ID sign-in alerts and SaaS identity provider threats are owned by the Cloud Security team.",
       "error": null
     }
   ]

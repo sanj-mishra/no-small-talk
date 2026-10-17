@@ -3,24 +3,24 @@
   "systems": {
     "rules": {
       "accuracy_pct": {
-        "forced": 93.3,
-        "abstain": 93.3
+        "forced": 90.0,
+        "abstain": 90.0
       },
       "misroute_pct": {
         "forced": 0.0,
         "abstain": 0.0
       },
       "missed_escalation_pct": {
-        "forced": 33.3,
-        "abstain": 33.3
+        "forced": 29.2,
+        "abstain": 29.2
       },
       "unnecessary_review_pct": {
-        "forced": 0.0,
-        "abstain": 0.0
+        "forced": 5.2,
+        "abstain": 5.2
       },
       "review_load_pct": {
-        "forced": 13.3,
-        "abstain": 13.3
+        "forced": 18.3,
+        "abstain": 18.3
       },
       "mean_latency_s": {
         "forced": 0.0,
@@ -33,7 +33,7 @@
     },
     "jev": {
       "accuracy_pct": {
-        "forced": 80.0,
+        "forced": 79.2,
         "abstain": 93.3
       },
       "misroute_pct": {
@@ -42,53 +42,53 @@
       },
       "missed_escalation_pct": {
         "forced": 100.0,
-        "abstain": 33.3
+        "abstain": 29.2
       },
       "unnecessary_review_pct": {
-        "forced": 0.0,
-        "abstain": 0.0
+        "forced": 1.0,
+        "abstain": 1.0
       },
       "review_load_pct": {
-        "forced": 0.0,
-        "abstain": 13.3
+        "forced": 0.8,
+        "abstain": 15.0
       },
       "mean_latency_s": {
-        "forced": 0.204,
-        "abstain": 0.204
+        "forced": 0.216,
+        "abstain": 0.712
       },
       "est_cost_per_1k_usd": {
-        "forced": 0.0232,
-        "abstain": 0.0251
+        "forced": 0.0228,
+        "abstain": 0.0248
       }
     },
     "gemini": {
       "accuracy_pct": {
-        "forced": 86.7,
-        "abstain": 100.0
+        "forced": 87.5,
+        "abstain": 98.3
       },
       "misroute_pct": {
         "forced": 0.0,
         "abstain": 0.0
       },
       "missed_escalation_pct": {
-        "forced": 66.7,
-        "abstain": 0.0
+        "forced": 62.5,
+        "abstain": 8.3
       },
       "unnecessary_review_pct": {
         "forced": 0.0,
         "abstain": 0.0
       },
       "review_load_pct": {
-        "forced": 6.7,
-        "abstain": 20.0
+        "forced": 7.5,
+        "abstain": 18.3
       },
       "mean_latency_s": {
-        "forced": 2.379,
-        "abstain": 2.853
+        "forced": 9.795,
+        "abstain": 8.526
       },
       "est_cost_per_1k_usd": {
-        "forced": 0.2121,
-        "abstain": 0.2242
+        "forced": 0.2091,
+        "abstain": 0.2198
       }
     }
   }

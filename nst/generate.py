@@ -6,7 +6,7 @@ Two modes, both writing a normal alerts.json that `nst.run --alerts` can consume
     composes plausible, correctly-labeled synthetic alerts. Deterministic — the same seed
     gives the same set, so a whole room can generate without any API.
 
-      uv run python -m nst.generate --mix enterprise=6,email=6,cloud=6,review=4 --seed 7 \
+      uv run python -m nst.generate --mix soc=6,cloud=6,prodsec=6,review=4 --seed 7 \
           --out data/my_alerts.json
 
   * guidance (optional, needs GEMINI_API_KEY): you describe the queue you want in plain
@@ -187,7 +187,7 @@ def main(argv: list[str] | None = None) -> int:
     from dotenv import load_dotenv
     load_dotenv()
     p = argparse.ArgumentParser(description="Generate a custom alert mix to route.")
-    p.add_argument("--mix", help="offline counts per label, e.g. enterprise=6,email=6,cloud=6,review=4")
+    p.add_argument("--mix", help="offline counts per label, e.g. soc=6,cloud=6,prodsec=6,review=4")
     p.add_argument("--guidance", help="LLM mode: describe the queue you want (needs GEMINI_API_KEY)")
     p.add_argument("--n", type=int, default=30, help="total alerts for --guidance mode")
     p.add_argument("--seed", type=int, default=0, help="seed for reproducible offline generation")

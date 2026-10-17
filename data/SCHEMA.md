@@ -27,14 +27,14 @@ right owner; those keep their team label and are simply harder to get right.
 ## `teams.json` (optional)
 
 Shape: `{ "<label>": "<description the router sees>", ... }`. Defaults to the built-in
-Enterprise / Email / Cloud set in `nst/core.py`. The description is handed verbatim to every
+SOC / Cloud Security / ProdSec set in `nst/core.py`. The description is handed verbatim to every
 model-based router, so write it the way you'd brief a new analyst.
 
 ```json
 {
-  "enterprise": "Enterprise Security — endpoint, host, and internal-network threats: ...",
-  "email": "Email Security — phishing, BEC, malicious attachments ...",
-  "cloud": "Cloud Security — AWS/GCP/Azure, IAM, buckets, SaaS identity ..."
+  "soc": "SOC — endpoint/EDR and host malware, phishing and email-borne threats, and network intrusions.",
+  "cloud": "Cloud Security — AWS/GCP/Azure activity, IAM and console logins, storage buckets, and SaaS identity.",
+  "prodsec": "ProdSec — the company's own apps, services, and APIs: app vulns (SAST/DAST), exposed endpoints, CI/CD, and committed secrets."
 }
 ```
 

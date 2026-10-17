@@ -2,8 +2,8 @@
 
 A small, reproducible experiment for security practitioners. It routes the same set of
 synthetic security alerts through three systems and compares them — not on accuracy alone,
-but on the things that actually matter for a triage queue: **misroutes, human-review load,
-latency, and cost.**
+but on the things that actually matter for a triage queue: **misroutes, missed escalations,
+human-review load, latency, and cost.**
 
 The three systems:
 
@@ -30,7 +30,7 @@ uv sync
 uv run python -m nst.flow
 
 # 2. Build your own mix (offline, deterministic) and route it through the baseline.
-uv run python -m nst.generate --mix enterprise=6,email=6,cloud=6,review=4 --seed 7 --out data/mine.json
+uv run python -m nst.generate --mix soc=6,cloud=6,prodsec=6,review=4 --seed 7 --out data/mine.json
 uv run python -m nst.run --systems rules --alerts data/mine.json --condition abstain --out results/mine.json
 uv run python -m nst.metrics --raw results/mine.json
 ```
@@ -40,10 +40,28 @@ Live calls are optional: put `TYPESAFE_API_KEY` / `GEMINI_API_KEY` in `.env`, th
 [LAB.md](LAB.md) for the 30-minute demo-lab runsheet and [data/SCHEMA.md](data/SCHEMA.md) to
 bring your own alerts and teams.
 
-## Status
+## What it finds (120 synthetic alerts)
 
-Under active construction — see the commit history. Sections marked _TODO_ are finalized in a
-later commit.
+Measured, not claimed — reproduce it with `nst.flow`. Two conditions: **forced** (teams only)
+vs **+ review** (an explicit "send to a human" option). Review gate at confidence 0.6.
+
+| system | forced acc | + review acc | missed escalations (forced → + review) |
+|---|---|---|---|
+| rules  | 90% | 90% | 7/24 → 7/24 |
+| JEV    | 79% | **93%** | 24/24 → 7/24 |
+| Gemini | 88% | **98%** | 15/24 → 2/24 |
+
+Nobody misroutes a *routable* alert (0% in both conditions). The damage is **missed
+escalations** — no-context alerts confidently sent to a team. One explicit review option
+fixes most of it, for both models: the lever is the option set, not a bigger model. JEV is
+~12× faster and ~9× cheaper per alert; Gemini edges accuracy by escalating more of the
+ambiguous alerts. A trade-off, not a winner. (Synthetic set; "perfect here" ≠ perfect everywhere.)
+
+## Try it in a browser
+
+[`submission/demo-sandbox.html`](submission/demo-sandbox.html) is a self-contained, offline
+page — open it in any browser (no keys, no Python) to route the 120 alerts yourself, drag the
+confidence gate, and watch misroutes vs. missed escalations trade off live.
 
 ## License
 

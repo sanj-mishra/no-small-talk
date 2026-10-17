@@ -1,5 +1,5 @@
 {
-  "_comment": "30 synthetic security alerts for routing. ground_truth in {soc, cloud, prodsec, review}. 'review' = genuinely insufficient/ambiguous context, where escalation is the correct answer. 'scenario' tags the cases walked through on stage. See data/SCHEMA.md.",
+  "_comment": "120 synthetic alerts for the routing experiment: 30 hand-authored (with hero scenario tags) + 90 offline-generated (mix soc=24,cloud=24,prodsec=24,review=18, seed=7). Synthetic only \u2014 never paste real alert data.",
   "alerts": [
     {
       "id": "soc1",
@@ -42,10 +42,9 @@
       "text": "User clicked a link in an email that led to a fake DocuSign login page and submitted their corporate credentials before reporting it.",
       "ground_truth": "soc"
     },
-
     {
       "id": "cloud1",
-      "text": "GuardDuty: anomalous IAM API calls — CreateAccessKey followed by AttachUserPolicy (AdministratorAccess) — for the 'ci-deploy' user from a new IP in eu-west-1.",
+      "text": "GuardDuty: anomalous IAM API calls \u2014 CreateAccessKey followed by AttachUserPolicy (AdministratorAccess) \u2014 for the 'ci-deploy' user from a new IP in eu-west-1.",
       "ground_truth": "cloud"
     },
     {
@@ -55,7 +54,7 @@
     },
     {
       "id": "cloud3",
-      "text": "Okta: impossible-travel sign-in for user asingh — London then Lagos within 8 minutes — with MFA satisfied via push on both.",
+      "text": "Okta: impossible-travel sign-in for user asingh \u2014 London then Lagos within 8 minutes \u2014 with MFA satisfied via push on both.",
       "ground_truth": "cloud"
     },
     {
@@ -83,7 +82,6 @@
       "text": "AWS: a root-account console login from an unfamiliar device, with no MFA challenge recorded in CloudTrail for the session.",
       "ground_truth": "cloud"
     },
-
     {
       "id": "prod1",
       "text": "SAST on the checkout-service pull request flagged a SQL injection in an unparameterized query that handles order lookups; the PR is approved and queued to merge.",
@@ -102,7 +100,7 @@
     },
     {
       "id": "prod4",
-      "text": "Bug bounty report: an unauthenticated endpoint on the public API (/v2/users/{id}) returns full customer PII for arbitrary IDs — a classic IDOR.",
+      "text": "Bug bounty report: an unauthenticated endpoint on the public API (/v2/users/{id}) returns full customer PII for arbitrary IDs \u2014 a classic IDOR.",
       "ground_truth": "prodsec"
     },
     {
@@ -125,7 +123,6 @@
       "text": "A developer reports that debug mode is enabled on the production web app, exposing stack traces and internal API keys in error responses.",
       "ground_truth": "prodsec"
     },
-
     {
       "id": "r1",
       "text": "Alert: anomalous activity detected on asset HOST-4471. Risk score 72. No additional detail available from the connector.",
@@ -156,6 +153,456 @@
       "id": "r6",
       "text": "DLP alert: 'sensitive data movement detected'. Destination and channel fields are null; the connector integration is reporting a degraded state.",
       "ground_truth": "review"
+    },
+    {
+      "id": "g88",
+      "text": "SIEM correlation 'Suspicious Behavior - Multiple' triggered for svc-backup; sub-events referenced but details truncated at the forwarder.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g60",
+      "text": "CI/CD: an unexpected build step was injected into the release pipeline for orders-worker, fetching an external script.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g15",
+      "text": "Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g18",
+      "text": "User-reported phishing from 'payroll@adp-secure[.]com' with a credential-harvesting HTML attachment.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g85",
+      "text": "SIEM: 'sensitive data movement detected'. Destination and channel fields are null; the source system is not identified.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g77",
+      "text": "Threat-intel match on an IOC observed 'somewhere in the environment'; the source system is not identified.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g53",
+      "text": "Image scanner: the production payments-api container ships a base image with a known critical vuln and runs as root.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g37",
+      "text": "Entra ID: impossible-travel sign-in for jdoe with MFA satisfied via push on both legs.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g21",
+      "text": "User clicked a link in an email to a fake Microsoft 365 login and submitted corporate credentials.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g20",
+      "text": "User clicked a link in an email to a fake Microsoft 365 login and submitted corporate credentials.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g55",
+      "text": "DAST on the customer portal found a reflected XSS on the orders-worker login page.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g81",
+      "text": "SIEM correlation 'Rare Process + Net' triggered for jdoe; sub-events referenced but the source system is not identified.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g84",
+      "text": "the DLP connector: 'sensitive data movement detected'. Destination and channel fields are null; details truncated at the forwarder.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g3",
+      "text": "Antivirus: ransomware-style sequential file encryption spreading across a share from WKS-2408.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g65",
+      "text": "DAST on the customer portal found a reflected XSS on the orders-worker login page.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g56",
+      "text": "Dependency scanner: a critical RCE CVE in a library bundled by the internet-facing auth-service.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g40",
+      "text": "Storage bucket 'prod-backups' ACL changed to public-read; objects now world-readable.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g67",
+      "text": "Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g19",
+      "text": "Antivirus: ransomware-style sequential file encryption spreading across a share from WKS-5919.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g8",
+      "text": "Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g54",
+      "text": "SAST on the api-gateway pull request flagged a SQL injection in an unparameterized query.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g87",
+      "text": "SIEM correlation 'Rare Process + Net' triggered for svc-backup; sub-events referenced but the source system is not identified.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g48",
+      "text": "GCP: root/owner console login from an unfamiliar device with no MFA challenge recorded.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g35",
+      "text": "GCP: root/owner console login from an unfamiliar device with no MFA challenge recorded.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g33",
+      "text": "GCP: root/owner console login from an unfamiliar device with no MFA challenge recorded.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g71",
+      "text": "Image scanner: the production api-gateway container ships a base image with a known critical vuln and runs as root.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g32",
+      "text": "Azure: anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'jdoe' from a new IP.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g76",
+      "text": "the anomaly model alert: anomalous activity detected on asset WKS-3433. Risk score 40. the integration is reporting a degraded state.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g5",
+      "text": "Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g24",
+      "text": "Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g17",
+      "text": "User clicked a link in an email to a fake Microsoft 365 login and submitted corporate credentials.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g7",
+      "text": "SentinelOne flagged Emotet on host SRV-FS73 (user svc-backup); LSASS memory access detected.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g69",
+      "text": "Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g43",
+      "text": "GCP: a service-account key was created and immediately used from an unrecognized ASN.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g72",
+      "text": "SAST on the payments-api pull request flagged a SQL injection in an unparameterized query.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g39",
+      "text": "AWS (GuardDuty): anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'kpatel' from a new IP.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g23",
+      "text": "the secure email gateway blocked an inbound message carrying a Qakbot loader in a password-protected archive.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g59",
+      "text": "CI/CD: an unexpected build step was injected into the release pipeline for auth-service, fetching an external script.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g42",
+      "text": "Storage bucket 'prod-backups' ACL changed to public-read; objects now world-readable.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g74",
+      "text": "SIEM: 'sensitive data movement detected'. Destination and channel fields are null; no further detail from the connector.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g38",
+      "text": "Azure AD: impossible-travel sign-in for mchen with MFA satisfied via push on both legs.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g10",
+      "text": "SentinelOne: unsigned binary executing from %APPDATA% on LAPTOP-FIN71, beaconing to a known C2 IP.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g2",
+      "text": "CrowdStrike Falcon flagged Emotet on host LAPTOP-FIN64 (user svc-backup); LSASS memory access detected.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g9",
+      "text": "CrowdStrike Falcon flagged Emotet on host SRV-FS18 (user asingh); process injection detected.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g68",
+      "text": "Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g66",
+      "text": "Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g52",
+      "text": "Dependency scanner: a critical RCE CVE in a library bundled by the internet-facing payments-api.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g64",
+      "text": "Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g75",
+      "text": "SIEM alert: anomalous activity detected on asset SRV-FS78. Risk score 320. the source system is not identified.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g73",
+      "text": "SIEM alert: anomalous activity detected on asset SRV-FS43. Risk score 240. no further detail from the connector.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g79",
+      "text": "the DLP connector alert: anomalous activity detected on asset WKS-8927. Risk score 240. the integration is reporting a degraded state.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g6",
+      "text": "CrowdStrike Falcon: unsigned binary executing from %APPDATA% on WKS-7955, beaconing to a known C2 IP.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g22",
+      "text": "CrowdStrike Falcon: unsigned binary executing from %APPDATA% on DEV-BUILD-21, beaconing to a known C2 IP.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g41",
+      "text": "Storage bucket 'analytics-exports' ACL changed to public-read; objects now world-readable.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g63",
+      "text": "CI/CD: an unexpected build step was injected into the release pipeline for checkout-service, fetching an external script.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g28",
+      "text": "Azure: a service-account key was created and immediately used from an unrecognized ASN.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g12",
+      "text": "Antivirus: ransomware-style sequential file encryption spreading across a share from LAPTOP-FIN12.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g57",
+      "text": "Secret scanner: a production AWS access key was committed to the mobile-app repo on the default branch.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g31",
+      "text": "Azure: root/owner console login from an unfamiliar device with no MFA challenge recorded.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g13",
+      "text": "SentinelOne: unsigned binary executing from %APPDATA% on WKS-4374, beaconing to a known C2 IP.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g49",
+      "text": "Secret scanner: a production AWS access key was committed to the infra-scripts repo on the default branch.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g90",
+      "text": "SIEM correlation 'Rare Process + Net' triggered for mchen; sub-events referenced but the integration is reporting a degraded state.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g51",
+      "text": "SAST on the payments-api pull request flagged a SQL injection in an unparameterized query.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g50",
+      "text": "Dependency scanner: a critical RCE CVE in a library bundled by the internet-facing payments-api.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g16",
+      "text": "Mimecast blocked an inbound message carrying a a Cobalt Strike loader in a password-protected archive.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g83",
+      "text": "SIEM correlation 'Suspicious Behavior - Multiple' triggered for svc-backup; sub-events referenced but details truncated at the forwarder.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g80",
+      "text": "Threat-intel match on an IOC observed 'somewhere in the environment'; no further detail from the connector.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g70",
+      "text": "SAST on the api-gateway pull request flagged a SQL injection in an unparameterized query.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g1",
+      "text": "the secure email gateway blocked an inbound message carrying a Qakbot loader in a password-protected archive.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g62",
+      "text": "Image scanner: the production orders-worker container ships a base image with a known critical vuln and runs as root.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g27",
+      "text": "Azure AD: impossible-travel sign-in for asingh with MFA satisfied via push on both legs.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g44",
+      "text": "GCP: anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'mchen' from a new IP.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g26",
+      "text": "Entra ID: legacy-auth sign-in succeeded for an exec account from a foreign IP, bypassing conditional access.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g86",
+      "text": "the DLP connector alert: anomalous activity detected on asset LAPTOP-FIN45. Risk score 320. details truncated at the forwarder.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g30",
+      "text": "GCP: anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'asingh' from a new IP.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g14",
+      "text": "User clicked a link in an email to a fake Okta login and submitted corporate credentials.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g29",
+      "text": "AWS (GuardDuty): a service-account key was created and immediately used from an unrecognized ASN.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g11",
+      "text": "Host IDS: lateral movement from 10.12.4.74 to multiple internal hosts over SMB (port 445).",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g47",
+      "text": "Entra ID: legacy-auth sign-in succeeded for an exec account from a foreign IP, bypassing conditional access.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g82",
+      "text": "Threat-intel match on an IOC observed 'somewhere in the environment'; the integration is reporting a degraded state.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g58",
+      "text": "Dependency scanner: a critical RCE CVE in a library bundled by the internet-facing api-gateway.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g45",
+      "text": "Azure: a service-account key was created and immediately used from an unrecognized ASN.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g78",
+      "text": "the DLP connector: 'sensitive data movement detected'. Destination and channel fields are null; the integration is reporting a degraded state.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g25",
+      "text": "Azure: anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'jdoe' from a new IP.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g34",
+      "text": "Azure: root/owner console login from an unfamiliar device with no MFA challenge recorded.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g61",
+      "text": "Secret scanner: a production AWS access key was committed to the web-frontend repo on the default branch.",
+      "ground_truth": "prodsec"
+    },
+    {
+      "id": "g36",
+      "text": "Azure AD: impossible-travel sign-in for kpatel with MFA satisfied via push on both legs.",
+      "ground_truth": "cloud"
+    },
+    {
+      "id": "g89",
+      "text": "User ticket: 'something weird happened and my account looked off.' No artifacts attached.",
+      "ground_truth": "review"
+    },
+    {
+      "id": "g4",
+      "text": "Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.",
+      "ground_truth": "soc"
+    },
+    {
+      "id": "g46",
+      "text": "Entra ID: impossible-travel sign-in for mchen with MFA satisfied via push on both legs.",
+      "ground_truth": "cloud"
     }
   ]
 }

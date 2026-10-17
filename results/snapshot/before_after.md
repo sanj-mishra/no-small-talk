@@ -6,11 +6,11 @@ _Review threshold = 0.6. 'forced' offers only the teams; 'abstain' adds one expl
 
 | metric | forced | with review |
 |---|---|---|
-| accuracy % | 93.3 | 93.3 |
+| accuracy % | 90.0 | 90.0 |
 | misroutes % (of routable) | 0.0 | 0.0 |
-| missed escalations % (of review) | 33.3 | 33.3 |
-| unnecessary reviews % (of routable) | 0.0 | 0.0 |
-| review load % | 13.3 | 13.3 |
+| missed escalations % (of review) | 29.2 | 29.2 |
+| unnecessary reviews % (of routable) | 5.2 | 5.2 |
+| review load % | 18.3 | 18.3 |
 | mean latency (s) | 0.0 | 0.0 |
 | est. cost / 1k ($) | 0.0 | 0.0 |
 
@@ -18,22 +18,22 @@ _Review threshold = 0.6. 'forced' offers only the teams; 'abstain' adds one expl
 
 | metric | forced | with review |
 |---|---|---|
-| accuracy % | 80.0 | 93.3 |
+| accuracy % | 79.2 | 93.3 |
 | misroutes % (of routable) | 0.0 | 0.0 |
-| missed escalations % (of review) | 100.0 | 33.3 |
-| unnecessary reviews % (of routable) | 0.0 | 0.0 |
-| review load % | 0.0 | 13.3 |
-| mean latency (s) | 0.204 | 0.204 |
-| est. cost / 1k ($) | 0.0232 | 0.0251 |
+| missed escalations % (of review) | 100.0 | 29.2 |
+| unnecessary reviews % (of routable) | 1.0 | 1.0 |
+| review load % | 0.8 | 15.0 |
+| mean latency (s) | 0.216 | 0.712 |
+| est. cost / 1k ($) | 0.0228 | 0.0248 |
 
 ## gemini
 
 | metric | forced | with review |
 |---|---|---|
-| accuracy % | 86.7 | 100.0 |
+| accuracy % | 87.5 | 98.3 |
 | misroutes % (of routable) | 0.0 | 0.0 |
-| missed escalations % (of review) | 66.7 | 0.0 |
+| missed escalations % (of review) | 62.5 | 8.3 |
 | unnecessary reviews % (of routable) | 0.0 | 0.0 |
-| review load % | 6.7 | 20.0 |
-| mean latency (s) | 2.379 | 2.853 |
-| est. cost / 1k ($) | 0.2121 | 0.2242 |
+| review load % | 7.5 | 18.3 |
+| mean latency (s) | 9.795 | 8.526 |
+| est. cost / 1k ($) | 0.2091 | 0.2198 |

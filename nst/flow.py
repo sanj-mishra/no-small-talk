@@ -1,4 +1,4 @@
-"""End-to-end offline demo: the whole forced -> abstain story on the built-in 30 alerts,
+"""End-to-end offline demo: the whole forced -> abstain story on the built-in 120 alerts,
 read from the committed snapshot. No keys, no API calls — safe for a full room.
 
     uv run python -m nst.flow
@@ -6,7 +6,7 @@ read from the committed snapshot. No keys, no API calls — safe for a full room
 For a custom mix instead, generate one and route it through the rules baseline (the one
 system that scores novel alerts offline):
 
-    uv run python -m nst.generate --mix enterprise=6,email=6,cloud=6,review=4 --seed 7 --out data/mine.json
+    uv run python -m nst.generate --mix soc=6,cloud=6,prodsec=6,review=4 --seed 7 --out data/mine.json
     uv run python -m nst.run --systems rules --alerts data/mine.json --condition abstain --out results/mine.json
     uv run python -m nst.metrics --raw results/mine.json
 """
@@ -47,7 +47,7 @@ def main(argv: list[str] | None = None) -> int:
     abstain = json.loads((snap / "raw_abstain.json").read_text())
 
     print("=" * 70)
-    print("NO SMALL TALK — offline demo (built-in 30 alerts, no API calls)")
+    print("NO SMALL TALK — offline demo (built-in 120 alerts, no API calls)")
     print("=" * 70)
     print("\nThe question: give each system only the 3 teams (forced), or also an")
     print("explicit 'review' option (abstain)? Watch what the option does.\n")

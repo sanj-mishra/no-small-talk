@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import time
 
 from google import genai
@@ -20,6 +21,14 @@ from .core import ROUTING_INSTRUCTION, RouteResult
 
 NAME = "gemini"
 DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+
+# Pace request *starts* to stay under the model's per-minute quota. Hosted triage-tier
+# models (e.g. flash-lite) cap requests/minute; hitting that cap returns 429 and the
+# exponential backoff below crawls. Spacing calls so we never exceed the quota is both
+# faster end-to-end and avoids calls that exhaust their retries. Tune via env.
+MIN_INTERVAL_S = float(os.environ.get("GEMINI_MIN_INTERVAL_S", "4.0"))
+_last_start = 0.0
+_call_count = 0
 
 
 def _instruction(teams: dict[str, str]) -> str:
@@ -65,6 +74,15 @@ class GeminiRouter:
     def _generate(self, text: str):
         """Call Gemini, retrying transient 429/503 (high demand / rate limit) with backoff.
         Latency is measured around the successful attempt only, not the waits."""
+        global _last_start, _call_count
+        # Hold the configured minimum gap between successive request starts.
+        wait = _last_start + MIN_INTERVAL_S - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        _last_start = time.monotonic()
+        _call_count += 1
+        if _call_count % 20 == 0:
+            print(f"  [gemini] {_call_count} calls done", file=sys.stderr, flush=True)
         last = None
         for attempt in range(5):
             try:

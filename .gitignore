@@ -8,3 +8,4 @@ __pycache__/
 data/mine.json
 data/my_alerts.json
 .uv/
+deckbuild/
