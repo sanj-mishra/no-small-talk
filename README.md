@@ -51,11 +51,16 @@ vs **+ review** (an explicit "send to a human" option). Review gate at confidenc
 | JEV    | 79% | **93%** | 24/24 → 7/24 |
 | Gemini | 88% | **98%** | 15/24 → 2/24 |
 
-Nobody misroutes a *routable* alert (0% in both conditions). The damage is **missed
-escalations** — no-context alerts confidently sent to a team. One explicit review option
-fixes most of it, for both models: the lever is the option set, not a bigger model. JEV is
-~12× faster and ~9× cheaper per alert; Gemini edges accuracy by escalating more of the
-ambiguous alerts. A trade-off, not a winner. (Synthetic set; "perfect here" ≠ perfect everywhere.)
+**The headline is cost and latency, not accuracy.** Scored properly — with an explicit
+"send to a human" option — JEV and Gemini finish a near-tie (93% vs 98%), both routing the
+real alerts well, so accuracy isn't what decides. What decides: **JEV is ~12× faster
+(~0.7s vs ~8.5s per call) and ~9× cheaper (~$0.02 vs ~$0.22 per 1k).** Same job, essentially
+the same accuracy, an order of magnitude less time and money.
+
+Accuracy detail for the curious: nobody misroutes a *routable* alert (0% in both conditions);
+the only failure mode is **missed escalations** — no-context alerts confidently sent to a team —
+which the explicit review option fixes for both models. The lever is the option set, not a
+bigger model. (Synthetic set; "perfect here" ≠ perfect everywhere.)
 
 ## Try it in a browser
 

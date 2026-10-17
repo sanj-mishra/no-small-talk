@@ -19,12 +19,12 @@ uv run python -m nst.flow   # should print the before/after story; if it does, y
 
 | Time | Beat | Command / screen | The point |
 |---|---|---|---|
-| 0:00–0:04 | **Frame** | — | Three teams + a review lane, 120 synthetic alerts. Measure misroutes *and* missed escalations, not accuracy. |
-| 0:04–0:12 | **The trap** | `nst.flow` (top table) / sandbox, "teams only" | Forced to pick a team, both models confidently route the no-context alerts. JEV 24/24 missed, Gemini 15/24. |
-| 0:12–0:18 | **The fix** | same output, `with review` column | One extra option lifts JEV 79→93%, Gemini 88→98%. The option set, not the model. |
-| 0:18–0:24 | **Your turn** | generate + route a custom mix (below), or the sandbox | Attendees make a queue like theirs and watch it route. |
-| 0:24–0:27 | **Trade-off** | flow's per-system latency/cost rows | Opposite profiles: JEV ~12× faster, ~9× cheaper; they split only on the ambiguous no-context alerts. |
-| 0:27–0:30 | **Wrap** | — | Clone it; bring your own alerts (`data/SCHEMA.md`). |
+| 0:00–0:04 | **Frame** | — | Three teams + a human lane, 120 synthetic alerts. The question: does a routing queue actually need an LLM? |
+| 0:04–0:10 | **Two models** | `nst.flow` / sandbox | JEV (decision-native, calibrated confidence, sub-second) vs Gemini (generative, self-reported confidence, seconds). Same alert, two very different machines. |
+| 0:10–0:16 | **The bakeoff** | flow's before/after tables | Scored properly (with a human option) it's a near-tie — JEV 93%, Gemini 98%. Narrate the accuracy trap here: naive accuracy hides missed escalations (JEV 24/24, Gemini 15/24) until you add the option. Accuracy isn't the decider. |
+| 0:16–0:24 | **Cost & latency decide** | flow's latency/cost rows | The real gap: JEV ~12× faster (~0.7s vs ~8.5s), ~9× cheaper (~$0.02 vs ~$0.22/1k). At 10k alerts/day on one stream: JEV ~2 hrs, Gemini ~24 hrs. |
+| 0:24–0:28 | **Your turn** | generate + route a custom mix (below), or the sandbox | Attendees build a queue like theirs and route it. |
+| 0:28–0:30 | **Wrap** | — | Clone it; bring your own alerts (`data/SCHEMA.md`). |
 
 ## The "your turn" commands (offline, no keys)
 
