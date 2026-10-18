@@ -1,229 +1,122 @@
-<title>Routing Sandbox</title>
-<meta name="description" content="Poke at the No Small Talk experiment: route 120 security alerts through rules, JEV, and Gemini, drag the confidence gate, and watch what breaks.">
+<title>Cost &amp; Latency Sandbox</title>
+<meta name="description" content="Drag your queue size and watch what rules, JEV, and Gemini cost to run a routing queue — in dollars and in time. Measured per-call rates, offline.">
 <style>
 :root{
   color-scheme: light;
-  --bg:#FCF8F3; --panel:#FBF3EB; --panel2:#F4EADF; --ink:#2A211C; --body:#574E46;
-  --muted:#6E655C; --faint:#A79A8C; --line:#E9DBCC;
-  --accent:#C85A1E; --blue:#2F6E8F; --green:#2E8B6B; --brick:#B23A2E; --gold:#9A7B2E;
+  --bg:#FCF8F3; --panel:#FBF3EB; --ink:#2A211C; --body:#3E352D; --muted:#514840; --faint:#8A7B6B;
+  --line:#E9DBCC; --accent:#C85A1E; --green:#2E8B6B; --blue:#2F6E8F; --brick:#B23A2E;
   --serif:'Source Serif 4',Georgia,serif; --sans:'IBM Plex Sans',system-ui,Arial,sans-serif;
   --mono:'JetBrains Mono','Courier New',monospace;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--body);font-family:var(--sans);line-height:1.45}
-.wrap{max-width:1080px;margin:0 auto;padding:28px 16px 80px}
-header h1{font-family:var(--serif);font-weight:700;color:var(--accent);font-size:clamp(34px,6vw,52px);margin:0 0 6px;line-height:1.05}
-header .sub{font-family:var(--serif);color:var(--muted);font-size:clamp(17px,2.6vw,22px);margin:0 0 4px}
-header .meta{font-family:var(--mono);color:var(--faint);font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-top:8px}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:20px}
-.ctl-label{font-family:var(--mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--faint);margin:0 0 8px}
-.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--bg)}
-.seg button{appearance:none;border:0;background:transparent;font-family:var(--sans);font-size:15px;font-weight:600;color:var(--muted);padding:10px 18px;cursor:pointer}
-.seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
-.chip{appearance:none;border:1px solid var(--line);background:var(--bg);color:var(--muted);font-family:var(--sans);font-weight:600;font-size:14px;border-radius:999px;padding:8px 16px;cursor:pointer}
-.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);background:var(--panel2)}
-.gatewrap{margin-top:16px}
-.gatewrap .big{font-family:var(--mono);color:var(--ink);font-weight:700}
-input[type=range]{width:100%;accent-color:var(--accent);margin-top:6px}
-.hint{font-size:14px;color:var(--muted);margin:8px 0 0}
-.board{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px}
-.card h3{margin:0;font-family:var(--mono);font-size:14px;letter-spacing:1px;text-transform:uppercase}
-.card .acc{font-family:var(--serif);font-weight:700;font-size:clamp(38px,7vw,56px);line-height:1;color:var(--ink)}
-.card .acclbl{font-size:12px;color:var(--faint);margin-top:-6px;font-family:var(--mono);text-transform:uppercase;letter-spacing:1px}
-.stat{display:flex;justify-content:space-between;font-size:14px;border-top:1px dashed var(--line);padding-top:7px}
-.stat .k{color:var(--muted)} .stat .v{font-family:var(--mono);font-weight:700;color:var(--ink)}
-.stat.bad .v{color:var(--brick)} .stat.danger .v{color:var(--accent)}
-.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;font-size:13px;color:var(--muted)}
-.legend span{display:inline-flex;align-items:center;gap:6px}
-.dot{width:12px;height:12px;border-radius:3px;display:inline-block}
-.listhdr{display:flex;justify-content:space-between;align-items:baseline;margin-top:26px}
-.listhdr h2{font-family:var(--serif);color:var(--ink);font-size:24px;margin:0}
-.listhdr .count{font-family:var(--mono);font-size:13px;color:var(--faint)}
-.alert{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:12px}
-.alert .truth{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid currentColor;display:inline-block}
-.alert .txt{color:var(--ink);font-size:15.5px;margin:10px 0 12px;min-width:0}
-.alert .star{color:var(--accent);font-size:12px;font-family:var(--mono);margin-left:8px}
-.sysrow{display:grid;grid-template-columns:70px 1fr auto;gap:10px;align-items:center;border-top:1px dashed var(--line);padding:8px 0;font-size:14px}
-.sysrow .sys{font-family:var(--mono);font-weight:700;color:var(--muted);font-size:13px}
-.decision{font-family:var(--mono);font-weight:700;font-size:14px;padding:3px 10px;border-radius:999px;display:inline-block;border:1px solid currentColor}
-.sysrow .conf{font-family:var(--mono);font-size:13px;color:var(--faint);text-align:right}
-.tag{font-size:11px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.5px;color:var(--faint);margin-left:8px}
-footer{margin-top:40px;font-family:var(--mono);font-size:13px;color:var(--faint);text-align:center;letter-spacing:1px}
+.wrap{max-width:960px;margin:0 auto;padding:30px 16px 72px}
+h1{font-family:var(--serif);font-weight:700;color:var(--accent);font-size:clamp(32px,6vw,50px);margin:0 0 6px;line-height:1.05}
+.sub{font-family:var(--serif);color:var(--muted);font-size:clamp(17px,2.6vw,22px);margin:0}
+.meta{font-family:var(--mono);color:var(--faint);font-size:12px;letter-spacing:1px;text-transform:uppercase;margin-top:10px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:22px}
+.vol{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.vol .n{font-family:var(--serif);font-weight:700;color:var(--ink);font-size:clamp(34px,8vw,56px);line-height:1}
+.vol .u{font-family:var(--mono);color:var(--muted);font-size:18px}
+input[type=range]{width:100%;accent-color:var(--accent);margin-top:14px;height:28px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.chip{appearance:none;border:1px solid var(--line);background:var(--bg);color:var(--muted);font-family:var(--mono);font-weight:700;font-size:14px;border-radius:999px;padding:8px 16px;cursor:pointer}
+.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);background:#F4EADF}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:6px}
+.card h3{margin:0 0 4px;font-family:var(--mono);font-size:14px;letter-spacing:1px;text-transform:uppercase}
+.card .big{font-family:var(--serif);font-weight:700;font-size:clamp(34px,6vw,46px);line-height:1;color:var(--ink)}
+.card .lbl{font-size:12px;color:var(--faint);font-family:var(--mono);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.card .row{display:flex;justify-content:space-between;font-size:14px;border-top:1px dashed var(--line);padding-top:7px}
+.card .row .k{color:var(--muted)} .card .row .v{font-family:var(--mono);font-weight:700;color:var(--ink)}
+.card .warn{color:var(--brick)}
+.verdict{background:#F4EADF;border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:22px;font-size:clamp(17px,2.5vw,22px);color:var(--ink);line-height:1.5}
+.verdict b{color:var(--accent)}
+.note{font-size:13px;color:var(--faint);margin-top:16px;line-height:1.5}
+footer{margin-top:30px;font-family:var(--mono);font-size:13px;color:var(--faint);text-align:center;letter-spacing:1px}
 footer a{color:var(--accent)}
-@media(max-width:720px){ .board{grid-template-columns:1fr} .sysrow{grid-template-columns:58px 1fr auto} }
+@media(max-width:700px){ .cards{grid-template-columns:1fr} }
 </style>
 
 <div class="wrap">
-<header>
-  <h1>Routing sandbox</h1>
-  <p class="sub">The same 120 alerts, routed by rules, JEV, and Gemini — explore where each one breaks. (The cost &amp; latency trade-off is the talk’s punchline; this is the routing view.)</p>
-  <p class="meta">offline · no keys · real measured results, baked in</p>
-</header>
+<h1>Cost &amp; latency sandbox</h1>
+<p class="sub">Accuracy is a near-tie (JEV 93% · Gemini 98%). So the real question is what each router <i>costs to run</i>. Drag your queue size and watch.</p>
+<p class="meta">offline · measured per-call rates, 120 synthetic alerts</p>
 
 <div class="panel">
-  <p class="ctl-label">The options each system gets</p>
-  <div class="seg" id="cond" role="group" aria-label="condition">
-    <button data-cond="forced" aria-pressed="true">Teams only</button>
-    <button data-cond="abstain" aria-pressed="false">+ “send to a human”</button>
-  </div>
-  <p class="hint" id="condhint"></p>
-
-  <div class="gatewrap">
-    <p class="ctl-label">Safety net — hold for a human when the system is less sure than <span class="big" id="gateval">0.60</span></p>
-    <input type="range" id="gate" min="0" max="1" step="0.05" value="0.6">
-    <p class="hint">Drag it. Higher bar → more alerts kicked to a human (fewer buried, but more needless escalations). Lower bar → the models route almost everything themselves.</p>
-  </div>
-
-  <div style="margin-top:16px">
-    <p class="ctl-label">Show only</p>
-    <div class="row" id="filter">
-      <button class="chip" data-f="all" aria-pressed="true">All 120</button>
-      <button class="chip" data-f="soc" aria-pressed="false">SOC</button>
-      <button class="chip" data-f="cloud" aria-pressed="false">Cloud</button>
-      <button class="chip" data-f="prodsec" aria-pressed="false">ProdSec</button>
-      <button class="chip" data-f="review" aria-pressed="false">Needs a human</button>
-    </div>
+  <div class="vol"><span class="n" id="volN">10,000</span><span class="u">alerts / day</span></div>
+  <input type="range" id="vol" min="500" max="100000" step="500" value="10000">
+  <div class="chips" id="chips">
+    <button class="chip" data-v="1000">1k/day</button>
+    <button class="chip" data-v="10000" aria-pressed="true">10k/day</button>
+    <button class="chip" data-v="25000">25k/day</button>
+    <button class="chip" data-v="100000">100k/day</button>
   </div>
 </div>
 
-<div class="board" id="board"></div>
+<div class="cards" id="cards"></div>
 
-<div class="legend">
-  <span><i class="dot" style="background:var(--green)"></i> right call</span>
-  <span><i class="dot" style="background:var(--brick)"></i> wrong team (misroute)</span>
-  <span><i class="dot" style="background:var(--accent)"></i> buried — should’ve gone to a human</span>
-  <span><i class="dot" style="background:var(--gold)"></i> sent a human something it could’ve routed</span>
-</div>
+<div class="verdict" id="verdict"></div>
 
-<div class="listhdr">
-  <h2>The alerts</h2>
-  <span class="count" id="count"></span>
-</div>
-<div id="list"></div>
+<p class="note">Rates measured on this experiment (120 synthetic alerts): <b>JEV</b> ~$0.025 / 1k &amp; ~0.7s per call · <b>Gemini</b> ~$0.22 / 1k &amp; ~8.5s per call · <b>rules</b> free &amp; instant. Gemini latency is load-dependent (quieter days ~3s), so treat the time figures as an order of magnitude. "Clear a day" assumes one sequential stream. Accuracy with a human-review option: rules 90%, JEV 93%, Gemini 98%.</p>
 
 <footer>newsletter · <a href="https://servedsunniesideup.substack.com/subscribe">servedsunniesideup.substack.com</a> &nbsp;·&nbsp; github.com/sanj-mishra/no-small-talk</footer>
 </div>
 
-<script id="data" type="application/json">{"gate_default":0.6,"teams":["soc","cloud","prodsec"],"alerts":[["soc1","CrowdStrike Falcon: process injection on WKS-2290 (user jdoe). mimikatz.exe spawned from powershell.exe with an LSASS memory read attempt. Host quarantined.","soc",null],["soc2","Host IDS: SMB lateral movement from 10.12.4.33 to 11 internal hosts over port 445 within 90 seconds. Pass-the-hash pattern suspected.","soc",null],["soc3","Antivirus console: ransomware canary files modified on file server SRV-NAS01, with a rapid sequential-encryption pattern spreading across the \\\\finance share.","soc",null],["soc4","EDR: unsigned binary 'svch0st.exe' executing from %APPDATA% on LAPTOP-FIN12 and beaconing every 60s to a known C2 IP (45.9.148.x).","soc",null],["soc5","User-reported phishing: message from 'payroll@adp-secure[.]com', subject 'Updated Direct Deposit', with an HTML attachment 'form.html' that renders a fake Microsoft 365 login to harvest credentials.","soc","easy"],["soc6","Business email compromise: a CEO-impersonation email requesting an urgent wire transfer, with reply-to set to an external gmail.com address. Display name matches the real CEO.","soc",null],["soc7","Proofpoint flagged an inbound message carrying a password-protected archive 'invoice_8831.zip' containing a Qakbot loader. Delivered to 14 mailboxes before the block.","soc",null],["soc8","User clicked a link in an email that led to a fake DocuSign login page and submitted their corporate credentials before reporting it.","soc",null],["cloud1","GuardDuty: anomalous IAM API calls \u2014 CreateAccessKey followed by AttachUserPolicy (AdministratorAccess) \u2014 for the 'ci-deploy' user from a new IP in eu-west-1.","cloud",null],["cloud2","S3 bucket 'acme-customer-pii' ACL was changed to public-read; roughly 1.2M objects are now world-readable.","cloud",null],["cloud3","Okta: impossible-travel sign-in for user asingh \u2014 London then Lagos within 8 minutes \u2014 with MFA satisfied via push on both.","cloud",null],["cloud4","Azure AD: three new OAuth app consent grants requesting Mail.Read and Files.ReadWrite.All across the tenant, approved by non-admin users within an hour.","cloud",null],["cloud5","CloudTrail: GetSecretValue calls from a Lambda execution role spiked ~400x above baseline, pulling secrets the function has never read before.","cloud",null],["cloud6","GCP: a service-account key was created and immediately used from an unrecognized ASN to enumerate every storage bucket in project prod-data.","cloud",null],["cloud7","Entra ID: a legacy-auth (IMAP) sign-in succeeded for an executive account from a foreign IP, bypassing the tenant's conditional-access policy.","cloud",null],["cloud8","AWS: a root-account console login from an unfamiliar device, with no MFA challenge recorded in CloudTrail for the session.","cloud",null],["prod1","SAST on the checkout-service pull request flagged a SQL injection in an unparameterized query that handles order lookups; the PR is approved and queued to merge.","prodsec",null],["prod2","Dependency scanner: a critical remote-code-execution CVE in a logging library bundled by the internet-facing payments microservice. A fixed version is available.","prodsec",null],["prod3","Secret scanner: a long-lived AWS access key for a production role was committed to the mobile-app GitHub repo and pushed to the default branch.","prodsec","cross_domain"],["prod4","Bug bounty report: an unauthenticated endpoint on the public API (/v2/users/{id}) returns full customer PII for arbitrary IDs \u2014 a classic IDOR.","prodsec",null],["prod5","CI/CD alert: an unexpected build step was injected into the release pipeline and pulls a script from an external URL during the production build.","prodsec",null],["prod6","Image scanner: the production api-gateway container ships a base image with a known critical vulnerability and runs its process as root.","prodsec",null],["prod7","DAST scan of the customer portal found a reflected cross-site scripting (XSS) flaw on the login page that executes attacker-supplied script.","prodsec",null],["prod8","A developer reports that debug mode is enabled on the production web app, exposing stack traces and internal API keys in error responses.","prodsec",null],["r1","Alert: anomalous activity detected on asset HOST-4471. Risk score 72. No additional detail available from the connector.","review","missing_context"],["r2","SIEM correlation rule 'Suspicious Behavior - Multiple' triggered for user kpatel. 3 sub-events referenced; details truncated at the log forwarder.","review",null],["r3","Raw syslog flagged by the anomaly model, no classification: '<134>Oct 03 02:14:51 fw01 %ASA-6-302013: Built inbound TCP connection 889 for outside'.","review",null],["r4","Threat-intel feed reports a match on IOC 185.220.101.4 observed 'somewhere in the environment'; the originating source system is not identified in the alert.","review",null],["r5","User-submitted ticket: 'I think I got hacked?? something weird happened on my computer and also my email looked off.' No artifacts, logs, or host details attached.","review",null],["r6","DLP alert: 'sensitive data movement detected'. Destination and channel fields are null; the connector integration is reporting a degraded state.","review",null],["g88","SIEM correlation 'Suspicious Behavior - Multiple' triggered for svc-backup; sub-events referenced but details truncated at the forwarder.","review",null],["g60","CI/CD: an unexpected build step was injected into the release pipeline for orders-worker, fetching an external script.","prodsec",null],["g15","Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.","soc",null],["g18","User-reported phishing from 'payroll@adp-secure[.]com' with a credential-harvesting HTML attachment.","soc",null],["g85","SIEM: 'sensitive data movement detected'. Destination and channel fields are null; the source system is not identified.","review",null],["g77","Threat-intel match on an IOC observed 'somewhere in the environment'; the source system is not identified.","review",null],["g53","Image scanner: the production payments-api container ships a base image with a known critical vuln and runs as root.","prodsec",null],["g37","Entra ID: impossible-travel sign-in for jdoe with MFA satisfied via push on both legs.","cloud",null],["g21","User clicked a link in an email to a fake Microsoft 365 login and submitted corporate credentials.","soc",null],["g20","User clicked a link in an email to a fake Microsoft 365 login and submitted corporate credentials.","soc",null],["g55","DAST on the customer portal found a reflected XSS on the orders-worker login page.","prodsec",null],["g81","SIEM correlation 'Rare Process + Net' triggered for jdoe; sub-events referenced but the source system is not identified.","review",null],["g84","the DLP connector: 'sensitive data movement detected'. Destination and channel fields are null; details truncated at the forwarder.","review",null],["g3","Antivirus: ransomware-style sequential file encryption spreading across a share from WKS-2408.","soc",null],["g65","DAST on the customer portal found a reflected XSS on the orders-worker login page.","prodsec",null],["g56","Dependency scanner: a critical RCE CVE in a library bundled by the internet-facing auth-service.","prodsec",null],["g40","Storage bucket 'prod-backups' ACL changed to public-read; objects now world-readable.","cloud",null],["g67","Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).","prodsec",null],["g19","Antivirus: ransomware-style sequential file encryption spreading across a share from WKS-5919.","soc",null],["g8","Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.","soc",null],["g54","SAST on the api-gateway pull request flagged a SQL injection in an unparameterized query.","prodsec",null],["g87","SIEM correlation 'Rare Process + Net' triggered for svc-backup; sub-events referenced but the source system is not identified.","review",null],["g48","GCP: root/owner console login from an unfamiliar device with no MFA challenge recorded.","cloud",null],["g35","GCP: root/owner console login from an unfamiliar device with no MFA challenge recorded.","cloud",null],["g33","GCP: root/owner console login from an unfamiliar device with no MFA challenge recorded.","cloud",null],["g71","Image scanner: the production api-gateway container ships a base image with a known critical vuln and runs as root.","prodsec",null],["g32","Azure: anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'jdoe' from a new IP.","cloud",null],["g76","the anomaly model alert: anomalous activity detected on asset WKS-3433. Risk score 40. the integration is reporting a degraded state.","review",null],["g5","Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.","soc",null],["g24","Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.","soc",null],["g17","User clicked a link in an email to a fake Microsoft 365 login and submitted corporate credentials.","soc",null],["g7","SentinelOne flagged Emotet on host SRV-FS73 (user svc-backup); LSASS memory access detected.","soc",null],["g69","Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).","prodsec",null],["g43","GCP: a service-account key was created and immediately used from an unrecognized ASN.","cloud",null],["g72","SAST on the payments-api pull request flagged a SQL injection in an unparameterized query.","prodsec",null],["g39","AWS (GuardDuty): anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'kpatel' from a new IP.","cloud",null],["g23","the secure email gateway blocked an inbound message carrying a Qakbot loader in a password-protected archive.","soc",null],["g59","CI/CD: an unexpected build step was injected into the release pipeline for auth-service, fetching an external script.","prodsec",null],["g42","Storage bucket 'prod-backups' ACL changed to public-read; objects now world-readable.","cloud",null],["g74","SIEM: 'sensitive data movement detected'. Destination and channel fields are null; no further detail from the connector.","review",null],["g38","Azure AD: impossible-travel sign-in for mchen with MFA satisfied via push on both legs.","cloud",null],["g10","SentinelOne: unsigned binary executing from %APPDATA% on LAPTOP-FIN71, beaconing to a known C2 IP.","soc",null],["g2","CrowdStrike Falcon flagged Emotet on host LAPTOP-FIN64 (user svc-backup); LSASS memory access detected.","soc",null],["g9","CrowdStrike Falcon flagged Emotet on host SRV-FS18 (user asingh); process injection detected.","soc",null],["g68","Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).","prodsec",null],["g66","Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).","prodsec",null],["g52","Dependency scanner: a critical RCE CVE in a library bundled by the internet-facing payments-api.","prodsec",null],["g64","Bug bounty report: an unauthenticated endpoint on the public API returns customer PII for arbitrary IDs (IDOR).","prodsec",null],["g75","SIEM alert: anomalous activity detected on asset SRV-FS78. Risk score 320. the source system is not identified.","review",null],["g73","SIEM alert: anomalous activity detected on asset SRV-FS43. Risk score 240. no further detail from the connector.","review",null],["g79","the DLP connector alert: anomalous activity detected on asset WKS-8927. Risk score 240. the integration is reporting a degraded state.","review",null],["g6","CrowdStrike Falcon: unsigned binary executing from %APPDATA% on WKS-7955, beaconing to a known C2 IP.","soc",null],["g22","CrowdStrike Falcon: unsigned binary executing from %APPDATA% on DEV-BUILD-21, beaconing to a known C2 IP.","soc",null],["g41","Storage bucket 'analytics-exports' ACL changed to public-read; objects now world-readable.","cloud",null],["g63","CI/CD: an unexpected build step was injected into the release pipeline for checkout-service, fetching an external script.","prodsec",null],["g28","Azure: a service-account key was created and immediately used from an unrecognized ASN.","cloud",null],["g12","Antivirus: ransomware-style sequential file encryption spreading across a share from LAPTOP-FIN12.","soc",null],["g57","Secret scanner: a production AWS access key was committed to the mobile-app repo on the default branch.","prodsec",null],["g31","Azure: root/owner console login from an unfamiliar device with no MFA challenge recorded.","cloud",null],["g13","SentinelOne: unsigned binary executing from %APPDATA% on WKS-4374, beaconing to a known C2 IP.","soc",null],["g49","Secret scanner: a production AWS access key was committed to the infra-scripts repo on the default branch.","prodsec",null],["g90","SIEM correlation 'Rare Process + Net' triggered for mchen; sub-events referenced but the integration is reporting a degraded state.","review",null],["g51","SAST on the payments-api pull request flagged a SQL injection in an unparameterized query.","prodsec",null],["g50","Dependency scanner: a critical RCE CVE in a library bundled by the internet-facing payments-api.","prodsec",null],["g16","Mimecast blocked an inbound message carrying a a Cobalt Strike loader in a password-protected archive.","soc",null],["g83","SIEM correlation 'Suspicious Behavior - Multiple' triggered for svc-backup; sub-events referenced but details truncated at the forwarder.","review",null],["g80","Threat-intel match on an IOC observed 'somewhere in the environment'; no further detail from the connector.","review",null],["g70","SAST on the api-gateway pull request flagged a SQL injection in an unparameterized query.","prodsec",null],["g1","the secure email gateway blocked an inbound message carrying a Qakbot loader in a password-protected archive.","soc",null],["g62","Image scanner: the production orders-worker container ships a base image with a known critical vuln and runs as root.","prodsec",null],["g27","Azure AD: impossible-travel sign-in for asingh with MFA satisfied via push on both legs.","cloud",null],["g44","GCP: anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'mchen' from a new IP.","cloud",null],["g26","Entra ID: legacy-auth sign-in succeeded for an exec account from a foreign IP, bypassing conditional access.","cloud",null],["g86","the DLP connector alert: anomalous activity detected on asset LAPTOP-FIN45. Risk score 320. details truncated at the forwarder.","review",null],["g30","GCP: anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'asingh' from a new IP.","cloud",null],["g14","User clicked a link in an email to a fake Okta login and submitted corporate credentials.","soc",null],["g29","AWS (GuardDuty): a service-account key was created and immediately used from an unrecognized ASN.","cloud",null],["g11","Host IDS: lateral movement from 10.12.4.74 to multiple internal hosts over SMB (port 445).","soc",null],["g47","Entra ID: legacy-auth sign-in succeeded for an exec account from a foreign IP, bypassing conditional access.","cloud",null],["g82","Threat-intel match on an IOC observed 'somewhere in the environment'; the integration is reporting a degraded state.","review",null],["g58","Dependency scanner: a critical RCE CVE in a library bundled by the internet-facing api-gateway.","prodsec",null],["g45","Azure: a service-account key was created and immediately used from an unrecognized ASN.","cloud",null],["g78","the DLP connector: 'sensitive data movement detected'. Destination and channel fields are null; the integration is reporting a degraded state.","review",null],["g25","Azure: anomalous IAM calls (CreateAccessKey then AttachUserPolicy Admin) for 'jdoe' from a new IP.","cloud",null],["g34","Azure: root/owner console login from an unfamiliar device with no MFA challenge recorded.","cloud",null],["g61","Secret scanner: a production AWS access key was committed to the web-frontend repo on the default branch.","prodsec",null],["g36","Azure AD: impossible-travel sign-in for kpatel with MFA satisfied via push on both legs.","cloud",null],["g89","User ticket: 'something weird happened and my account looked off.' No artifacts attached.","review",null],["g4","Business email compromise: CEO-impersonation wire-transfer request, reply-to an external address.","soc",null],["g46","Entra ID: impossible-travel sign-in for mchen with MFA satisfied via push on both legs.","cloud",null]],"res":{"forced":{"rules":{"soc1":["soc",0.889],"soc2":["soc",1.0],"soc3":["soc",0.75],"soc4":["soc",1.0],"soc5":["soc",0.75],"soc6":["soc",1.0],"soc7":["soc",1.0],"soc8":["soc",1.0],"cloud1":["cloud",0.667],"cloud2":["cloud",1.0],"cloud3":["cloud",1.0],"cloud4":["cloud",1.0],"cloud5":["cloud",1.0],"cloud6":["cloud",1.0],"cloud7":["cloud",1.0],"cloud8":["cloud",1.0],"prod1":["prodsec",1.0],"prod2":["prodsec",1.0],"prod3":["prodsec",0.6],"prod4":["prodsec",1.0],"prod5":["prodsec",1.0],"prod6":["prodsec",1.0],"prod7":["prodsec",1.0],"prod8":["prodsec",1.0],"r1":["soc",1.0],"r2":[null,0.0],"r3":[null,0.0],"r4":[null,0.0],"r5":["soc",1.0],"r6":[null,0.0],"g88":[null,0.0],"g60":["prodsec",1.0],"g15":["soc",1.0],"g18":["soc",1.0],"g85":[null,0.0],"g77":[null,0.0],"g53":["prodsec",1.0],"g37":["cloud",1.0],"g21":["soc",0.0],"g20":["soc",0.0],"g55":["prodsec",1.0],"g81":[null,0.0],"g84":[null,0.0],"g3":["soc",1.0],"g65":["prodsec",1.0],"g56":["prodsec",1.0],"g40":["cloud",1.0],"g67":["prodsec",1.0],"g19":["soc",1.0],"g8":["soc",1.0],"g54":["prodsec",1.0],"g87":[null,0.0],"g48":["cloud",1.0],"g35":["cloud",1.0],"g33":["cloud",1.0],"g71":["prodsec",1.0],"g32":["cloud",1.0],"g76":["soc",1.0],"g5":["soc",1.0],"g24":["soc",1.0],"g17":["soc",0.0],"g7":["soc",1.0],"g69":["prodsec",1.0],"g43":["cloud",1.0],"g72":["prodsec",1.0],"g39":["cloud",1.0],"g23":["soc",1.0],"g59":["prodsec",1.0],"g42":["cloud",1.0],"g74":[null,0.0],"g38":["cloud",1.0],"g10":["soc",1.0],"g2":["soc",1.0],"g9":["soc",0.833],"g68":["prodsec",1.0],"g66":["prodsec",1.0],"g52":["prodsec",1.0],"g64":["prodsec",1.0],"g75":["soc",1.0],"g73":["soc",1.0],"g79":["soc",1.0],"g6":["soc",1.0],"g22":["soc",0.75],"g41":["cloud",1.0],"g63":["prodsec",1.0],"g28":["cloud",1.0],"g12":["soc",1.0],"g57":["prodsec",0.6],"g31":["cloud",1.0],"g13":["soc",1.0],"g49":["prodsec",0.6],"g90":[null,0.0],"g51":["prodsec",1.0],"g50":["prodsec",1.0],"g16":[null,0.0],"g83":[null,0.0],"g80":[null,0.0],"g70":["prodsec",1.0],"g1":["soc",1.0],"g62":["prodsec",1.0],"g27":["cloud",1.0],"g44":["cloud",1.0],"g26":["cloud",1.0],"g86":["soc",1.0],"g30":["cloud",1.0],"g14":["soc",0.0],"g29":["cloud",1.0],"g11":["soc",1.0],"g47":["cloud",1.0],"g82":[null,0.0],"g58":["prodsec",1.0],"g45":["cloud",1.0],"g78":[null,0.0],"g25":["cloud",1.0],"g34":["cloud",1.0],"g61":["prodsec",0.6],"g36":["cloud",1.0],"g89":[null,0.0],"g4":["soc",1.0],"g46":["cloud",1.0]},"jev":{"soc1":["soc",1.0],"soc2":["soc",1.0],"soc3":["soc",1.0],"soc4":["soc",1.0],"soc5":["soc",1.0],"soc6":["soc",1.0],"soc7":["soc",1.0],"soc8":["soc",0.98],"cloud1":["cloud",1.0],"cloud2":["cloud",1.0],"cloud3":["cloud",1.0],"cloud4":["cloud",1.0],"cloud5":["cloud",1.0],"cloud6":["cloud",1.0],"cloud7":["cloud",1.0],"cloud8":["cloud",1.0],"prod1":["prodsec",1.0],"prod2":["prodsec",1.0],"prod3":["prodsec",1.0],"prod4":["prodsec",1.0],"prod5":["prodsec",1.0],"prod6":["prodsec",1.0],"prod7":["prodsec",1.0],"prod8":["prodsec",1.0],"r1":["soc",1.0],"r2":["soc",1.0],"r3":["soc",1.0],"r4":["soc",1.0],"r5":["soc",1.0],"r6":["soc",0.95],"g88":["soc",1.0],"g60":["prodsec",1.0],"g15":["soc",1.0],"g18":["soc",1.0],"g85":["soc",0.98],"g77":["soc",1.0],"g53":["prodsec",1.0],"g37":["cloud",1.0],"g21":["soc",0.79],"g20":["soc",0.79],"g55":["prodsec",1.0],"g81":["soc",1.0],"g84":["soc",1.0],"g3":["soc",1.0],"g65":["prodsec",1.0],"g56":["prodsec",1.0],"g40":["cloud",1.0],"g67":["prodsec",1.0],"g19":["soc",1.0],"g8":["soc",1.0],"g54":["prodsec",1.0],"g87":["soc",1.0],"g48":["cloud",1.0],"g35":["cloud",1.0],"g33":["cloud",1.0],"g71":["prodsec",1.0],"g32":["cloud",1.0],"g76":["soc",1.0],"g5":["soc",1.0],"g24":["soc",1.0],"g17":["soc",0.79],"g7":["soc",1.0],"g69":["prodsec",1.0],"g43":["cloud",1.0],"g72":["prodsec",1.0],"g39":["cloud",1.0],"g23":["soc",1.0],"g59":["prodsec",1.0],"g42":["cloud",1.0],"g74":["soc",0.97],"g38":["cloud",0.98],"g10":["soc",1.0],"g2":["soc",1.0],"g9":["soc",1.0],"g68":["prodsec",1.0],"g66":["prodsec",1.0],"g52":["prodsec",1.0],"g64":["prodsec",1.0],"g75":["soc",1.0],"g73":["soc",1.0],"g79":["soc",1.0],"g6":["soc",1.0],"g22":["soc",1.0],"g41":["cloud",1.0],"g63":["prodsec",1.0],"g28":["cloud",1.0],"g12":["soc",1.0],"g57":["prodsec",1.0],"g31":["cloud",1.0],"g13":["soc",1.0],"g49":["prodsec",0.98],"g90":["soc",1.0],"g51":["prodsec",1.0],"g50":["prodsec",1.0],"g16":["soc",1.0],"g83":["soc",1.0],"g80":["soc",1.0],"g70":["prodsec",1.0],"g1":["soc",1.0],"g62":["prodsec",1.0],"g27":["cloud",0.98],"g44":["cloud",1.0],"g26":["cloud",1.0],"g86":["soc",1.0],"g30":["cloud",1.0],"g14":["soc",0.41],"g29":["cloud",1.0],"g11":["soc",1.0],"g47":["cloud",1.0],"g82":["soc",1.0],"g58":["prodsec",1.0],"g45":["cloud",1.0],"g78":["soc",0.97],"g25":["cloud",1.0],"g34":["cloud",1.0],"g61":["prodsec",1.0],"g36":["cloud",0.98],"g89":["soc",0.88],"g4":["soc",1.0],"g46":["cloud",1.0]},"gemini":{"soc1":["soc",1.0],"soc2":["soc",1.0],"soc3":["soc",1.0],"soc4":["soc",1.0],"soc5":["soc",1.0],"soc6":["soc",1.0],"soc7":["soc",1.0],"soc8":["soc",1.0],"cloud1":["cloud",0.95],"cloud2":["cloud",1.0],"cloud3":["cloud",1.0],"cloud4":["cloud",0.95],"cloud5":["cloud",0.95],"cloud6":["cloud",1.0],"cloud7":["cloud",0.95],"cloud8":["cloud",1.0],"prod1":["prodsec",1.0],"prod2":["prodsec",1.0],"prod3":["prodsec",1.0],"prod4":["prodsec",1.0],"prod5":["prodsec",1.0],"prod6":["prodsec",1.0],"prod7":["prodsec",1.0],"prod8":["prodsec",0.95],"r1":["soc",0.8],"r2":["soc",0.8],"r3":["soc",0.8],"r4":["soc",0.5],"r5":["soc",0.9],"r6":["soc",0.8],"g88":["soc",0.5],"g60":["prodsec",1.0],"g15":["soc",0.95],"g18":["soc",1.0],"g85":["soc",0.3],"g77":["soc",0.5],"g53":["prodsec",1.0],"g37":["cloud",0.95],"g21":["soc",1.0],"g20":["soc",1.0],"g55":["prodsec",1.0],"g81":["soc",0.5],"g84":["soc",0.8],"g3":["soc",1.0],"g65":["prodsec",1.0],"g56":["prodsec",1.0],"g40":["cloud",1.0],"g67":["prodsec",1.0],"g19":["soc",1.0],"g8":["soc",1.0],"g54":["prodsec",1.0],"g87":["soc",0.9],"g48":["cloud",1.0],"g35":["cloud",1.0],"g33":["cloud",1.0],"g71":["prodsec",1.0],"g32":["cloud",1.0],"g76":["soc",0.9],"g5":["soc",1.0],"g24":["soc",0.95],"g17":["soc",1.0],"g7":["soc",1.0],"g69":["prodsec",1.0],"g43":["cloud",1.0],"g72":["prodsec",1.0],"g39":["cloud",1.0],"g23":["soc",1.0],"g59":["prodsec",1.0],"g42":["cloud",1.0],"g74":["soc",0.4],"g38":["cloud",1.0],"g10":["soc",1.0],"g2":["soc",1.0],"g9":["soc",1.0],"g68":["prodsec",1.0],"g66":["prodsec",1.0],"g52":["prodsec",1.0],"g64":["prodsec",1.0],"g75":["soc",0.9],"g73":["soc",0.8],"g79":["soc",0.9],"g6":["soc",1.0],"g22":["soc",1.0],"g41":["cloud",1.0],"g63":["prodsec",1.0],"g28":["cloud",0.95],"g12":["soc",1.0],"g57":["prodsec",1.0],"g31":["cloud",0.95],"g13":["soc",1.0],"g49":["prodsec",1.0],"g90":["soc",0.95],"g51":["prodsec",1.0],"g50":["prodsec",1.0],"g16":["soc",1.0],"g83":["soc",0.8],"g80":["soc",0.5],"g70":["prodsec",1.0],"g1":["soc",1.0],"g62":["prodsec",1.0],"g27":["cloud",0.95],"g44":["cloud",1.0],"g26":["cloud",1.0],"g86":["soc",0.95],"g30":["cloud",1.0],"g14":["soc",0.95],"g29":["cloud",0.95],"g11":["soc",1.0],"g47":["cloud",0.95],"g82":["soc",0.5],"g58":["prodsec",1.0],"g45":["cloud",0.95],"g78":["cloud",0.6],"g25":["cloud",1.0],"g34":["cloud",0.95],"g61":["prodsec",0.95],"g36":["cloud",0.95],"g89":["soc",0.4],"g4":["soc",0.95],"g46":["cloud",0.95]}},"abstain":{"rules":{"soc1":["soc",0.889],"soc2":["soc",1.0],"soc3":["soc",0.75],"soc4":["soc",1.0],"soc5":["soc",0.75],"soc6":["soc",1.0],"soc7":["soc",1.0],"soc8":["soc",1.0],"cloud1":["cloud",0.667],"cloud2":["cloud",1.0],"cloud3":["cloud",1.0],"cloud4":["cloud",1.0],"cloud5":["cloud",1.0],"cloud6":["cloud",1.0],"cloud7":["cloud",1.0],"cloud8":["cloud",1.0],"prod1":["prodsec",1.0],"prod2":["prodsec",1.0],"prod3":["prodsec",0.6],"prod4":["prodsec",1.0],"prod5":["prodsec",1.0],"prod6":["prodsec",1.0],"prod7":["prodsec",1.0],"prod8":["prodsec",1.0],"r1":["soc",1.0],"r2":[null,0.0],"r3":[null,0.0],"r4":[null,0.0],"r5":["soc",1.0],"r6":[null,0.0],"g88":[null,0.0],"g60":["prodsec",1.0],"g15":["soc",1.0],"g18":["soc",1.0],"g85":[null,0.0],"g77":[null,0.0],"g53":["prodsec",1.0],"g37":["cloud",1.0],"g21":["soc",0.0],"g20":["soc",0.0],"g55":["prodsec",1.0],"g81":[null,0.0],"g84":[null,0.0],"g3":["soc",1.0],"g65":["prodsec",1.0],"g56":["prodsec",1.0],"g40":["cloud",1.0],"g67":["prodsec",1.0],"g19":["soc",1.0],"g8":["soc",1.0],"g54":["prodsec",1.0],"g87":[null,0.0],"g48":["cloud",1.0],"g35":["cloud",1.0],"g33":["cloud",1.0],"g71":["prodsec",1.0],"g32":["cloud",1.0],"g76":["soc",1.0],"g5":["soc",1.0],"g24":["soc",1.0],"g17":["soc",0.0],"g7":["soc",1.0],"g69":["prodsec",1.0],"g43":["cloud",1.0],"g72":["prodsec",1.0],"g39":["cloud",1.0],"g23":["soc",1.0],"g59":["prodsec",1.0],"g42":["cloud",1.0],"g74":[null,0.0],"g38":["cloud",1.0],"g10":["soc",1.0],"g2":["soc",1.0],"g9":["soc",0.833],"g68":["prodsec",1.0],"g66":["prodsec",1.0],"g52":["prodsec",1.0],"g64":["prodsec",1.0],"g75":["soc",1.0],"g73":["soc",1.0],"g79":["soc",1.0],"g6":["soc",1.0],"g22":["soc",0.75],"g41":["cloud",1.0],"g63":["prodsec",1.0],"g28":["cloud",1.0],"g12":["soc",1.0],"g57":["prodsec",0.6],"g31":["cloud",1.0],"g13":["soc",1.0],"g49":["prodsec",0.6],"g90":[null,0.0],"g51":["prodsec",1.0],"g50":["prodsec",1.0],"g16":[null,0.0],"g83":[null,0.0],"g80":[null,0.0],"g70":["prodsec",1.0],"g1":["soc",1.0],"g62":["prodsec",1.0],"g27":["cloud",1.0],"g44":["cloud",1.0],"g26":["cloud",1.0],"g86":["soc",1.0],"g30":["cloud",1.0],"g14":["soc",0.0],"g29":["cloud",1.0],"g11":["soc",1.0],"g47":["cloud",1.0],"g82":[null,0.0],"g58":["prodsec",1.0],"g45":["cloud",1.0],"g78":[null,0.0],"g25":["cloud",1.0],"g34":["cloud",1.0],"g61":["prodsec",0.6],"g36":["cloud",1.0],"g89":[null,0.0],"g4":["soc",1.0],"g46":["cloud",1.0]},"jev":{"soc1":["soc",1.0],"soc2":["soc",1.0],"soc3":["soc",1.0],"soc4":["soc",1.0],"soc5":["soc",1.0],"soc6":["soc",1.0],"soc7":["soc",1.0],"soc8":["soc",0.99],"cloud1":["cloud",1.0],"cloud2":["cloud",1.0],"cloud3":["cloud",1.0],"cloud4":["cloud",1.0],"cloud5":["cloud",1.0],"cloud6":["cloud",1.0],"cloud7":["cloud",1.0],"cloud8":["cloud",1.0],"prod1":["prodsec",1.0],"prod2":["prodsec",1.0],"prod3":["prodsec",1.0],"prod4":["prodsec",1.0],"prod5":["prodsec",1.0],"prod6":["prodsec",1.0],"prod7":["prodsec",1.0],"prod8":["prodsec",1.0],"r1":["soc",0.61],"r2":["review",0.76],"r3":["soc",0.63],"r4":["soc",0.53],"r5":["review",0.57],"r6":["soc",0.37],"g88":["review",0.72],"g60":["prodsec",1.0],"g15":["soc",1.0],"g18":["soc",1.0],"g85":["review",0.96],"g77":["review",0.65],"g53":["prodsec",1.0],"g37":["cloud",1.0],"g21":["soc",0.73],"g20":["soc",0.79],"g55":["prodsec",1.0],"g81":["review",0.43],"g84":["review",0.41],"g3":["soc",1.0],"g65":["prodsec",1.0],"g56":["prodsec",1.0],"g40":["cloud",1.0],"g67":["prodsec",1.0],"g19":["soc",1.0],"g8":["soc",1.0],"g54":["prodsec",1.0],"g87":["review",0.37],"g48":["cloud",1.0],"g35":["cloud",1.0],"g33":["cloud",1.0],"g71":["prodsec",1.0],"g32":["cloud",1.0],"g76":["soc",0.95],"g5":["soc",1.0],"g24":["soc",1.0],"g17":["soc",0.77],"g7":["soc",1.0],"g69":["prodsec",1.0],"g43":["cloud",1.0],"g72":["prodsec",1.0],"g39":["cloud",1.0],"g23":["soc",1.0],"g59":["prodsec",1.0],"g42":["cloud",1.0],"g74":["review",0.89],"g38":["cloud",1.0],"g10":["soc",1.0],"g2":["soc",1.0],"g9":["soc",1.0],"g68":["prodsec",1.0],"g66":["prodsec",1.0],"g52":["prodsec",1.0],"g64":["prodsec",1.0],"g75":["soc",0.6],"g73":["review",0.39],"g79":["soc",0.92],"g6":["soc",1.0],"g22":["soc",1.0],"g41":["cloud",1.0],"g63":["prodsec",1.0],"g28":["cloud",1.0],"g12":["soc",1.0],"g57":["prodsec",1.0],"g31":["cloud",1.0],"g13":["soc",1.0],"g49":["prodsec",0.96],"g90":["soc",0.8],"g51":["prodsec",1.0],"g50":["prodsec",1.0],"g16":["soc",1.0],"g83":["review",0.73],"g80":["review",0.89],"g70":["prodsec",1.0],"g1":["soc",1.0],"g62":["prodsec",1.0],"g27":["cloud",0.99],"g44":["cloud",1.0],"g26":["cloud",1.0],"g86":["soc",0.71],"g30":["cloud",1.0],"g14":["soc",0.43],"g29":["cloud",1.0],"g11":["soc",1.0],"g47":["cloud",1.0],"g82":["soc",0.49],"g58":["prodsec",1.0],"g45":["cloud",1.0],"g78":["soc",0.45],"g25":["cloud",1.0],"g34":["cloud",1.0],"g61":["prodsec",1.0],"g36":["cloud",0.99],"g89":["review",0.99],"g4":["soc",1.0],"g46":["cloud",1.0]},"gemini":{"soc1":["soc",1.0],"soc2":["soc",1.0],"soc3":["soc",1.0],"soc4":["soc",1.0],"soc5":["soc",1.0],"soc6":["soc",1.0],"soc7":["soc",1.0],"soc8":["soc",1.0],"cloud1":["cloud",0.95],"cloud2":["cloud",1.0],"cloud3":["cloud",1.0],"cloud4":["cloud",0.95],"cloud5":["cloud",0.95],"cloud6":["cloud",1.0],"cloud7":["cloud",0.95],"cloud8":["cloud",1.0],"prod1":["prodsec",1.0],"prod2":["prodsec",1.0],"prod3":["prodsec",1.0],"prod4":["prodsec",1.0],"prod5":["prodsec",1.0],"prod6":["prodsec",1.0],"prod7":["prodsec",1.0],"prod8":["prodsec",0.95],"r1":["review",0.3],"r2":["review",0.2],"r3":["review",0.3],"r4":["review",0.3],"r5":["review",0.9],"r6":["review",0.4],"g88":["review",0.3],"g60":["prodsec",0.95],"g15":["soc",0.95],"g18":["soc",1.0],"g85":["review",0.2],"g77":["review",0.2],"g53":["prodsec",1.0],"g37":["cloud",0.95],"g21":["soc",1.0],"g20":["soc",1.0],"g55":["prodsec",1.0],"g81":["review",0.5],"g84":["review",0.3],"g3":["soc",1.0],"g65":["prodsec",1.0],"g56":["prodsec",1.0],"g40":["cloud",1.0],"g67":["prodsec",1.0],"g19":["soc",1.0],"g8":["soc",0.95],"g54":["prodsec",1.0],"g87":["review",0.5],"g48":["cloud",1.0],"g35":["cloud",1.0],"g33":["cloud",1.0],"g71":["prodsec",1.0],"g32":["cloud",0.95],"g76":["soc",0.8],"g5":["soc",0.95],"g24":["soc",0.95],"g17":["soc",1.0],"g7":["soc",1.0],"g69":["prodsec",1.0],"g43":["cloud",0.95],"g72":["prodsec",1.0],"g39":["cloud",1.0],"g23":["soc",0.95],"g59":["prodsec",1.0],"g42":["cloud",1.0],"g74":["review",0.2],"g38":["cloud",1.0],"g10":["soc",1.0],"g2":["soc",1.0],"g9":["soc",1.0],"g68":["prodsec",1.0],"g66":["prodsec",1.0],"g52":["prodsec",1.0],"g64":["prodsec",1.0],"g75":["soc",0.8],"g73":["review",0.2],"g79":["review",0.3],"g6":["soc",1.0],"g22":["soc",1.0],"g41":["cloud",1.0],"g63":["prodsec",0.95],"g28":["cloud",0.95],"g12":["soc",1.0],"g57":["prodsec",1.0],"g31":["cloud",1.0],"g13":["soc",1.0],"g49":["prodsec",0.95],"g90":["review",0.3],"g51":["prodsec",1.0],"g50":["prodsec",1.0],"g16":["soc",1.0],"g83":["review",0.2],"g80":["review",0.2],"g70":["prodsec",1.0],"g1":["soc",1.0],"g62":["prodsec",0.95],"g27":["cloud",0.95],"g44":["cloud",1.0],"g26":["cloud",0.95],"g86":["review",0.3],"g30":["cloud",1.0],"g14":["soc",0.95],"g29":["cloud",1.0],"g11":["soc",1.0],"g47":["cloud",0.95],"g82":["review",0.2],"g58":["prodsec",1.0],"g45":["cloud",0.95],"g78":["review",0.3],"g25":["cloud",1.0],"g34":["cloud",0.95],"g61":["prodsec",1.0],"g36":["cloud",0.95],"g89":["review",1.0],"g4":["soc",0.95],"g46":["cloud",0.95]}}}}</script>
 <script>
-const D = JSON.parse(document.getElementById('data').textContent);
-const TEAMS = D.teams;                 // soc, cloud, prodsec
-const SYS = [['rules','Rules'],['jev','JEV'],['gemini','Gemini']];
-const SYSCOLOR = {rules:'var(--muted)', jev:'var(--green)', gemini:'var(--blue)'};
-const state = {cond:'forced', gate:0.6, filter:'all'};
-
-const CONDHINT = {
-  forced:'Each system may pick only one of the three teams — no built-in way to say “I can’t route this.”',
-  abstain:'Each system also gets an explicit “send this to a human” option it can choose on its own.'
-};
-
-// final decision after the gate: below the bar (or no pick) -> hold for a human
-function final(choice, conf){
-  if(choice===null) return 'review';
-  if(conf!==null && conf < state.gate) return 'review';
-  return choice;
+const SYS = [
+  {key:'rules',  name:'Rules',  color:'var(--muted)', c:0,     l:0.004},
+  {key:'jev',    name:'JEV',    color:'var(--green)', c:0.025, l:0.7},
+  {key:'gemini', name:'Gemini', color:'var(--blue)',  c:0.22,  l:8.5},
+]; // c = $/1,000 alerts, l = seconds/call
+const usd = n => '$' + Math.round(n).toLocaleString('en-US');
+const usdDay = n => n < 10 ? '$'+n.toFixed(2) : '$'+Math.round(n).toLocaleString('en-US');
+function dur(hrs){
+  if(hrs < 0.02) return 'instant';
+  if(hrs < 1)    return Math.round(hrs*60)+' min';
+  if(hrs < 48)   return hrs.toFixed(1)+' hrs';
+  return (hrs/24).toFixed(1)+' days';
 }
-function category(truth, fin){
-  if(truth==='review') return fin==='review' ? 'ok' : 'missed';
-  if(fin===truth) return 'ok';
-  if(fin==='review') return 'unnec';
-  return 'misroute';
-}
-const CATCOLOR = {ok:'var(--green)', misroute:'var(--brick)', missed:'var(--accent)', unnec:'var(--gold)'};
-const CATTAG   = {ok:'', misroute:'misroute', missed:'buried', unnec:'needless review'};
-
-function labelFor(fin){ return fin==='review' ? 'HUMAN' : fin.toUpperCase(); }
-
-function filteredAlerts(){
-  return D.alerts.filter(a => state.filter==='all' ? true : a[2]===state.filter);
-}
-
-function scoreSystem(sys, alerts){
-  const r = D.res[state.cond][sys];
-  let correct=0, misroute=0, missed=0, unnec=0, human=0;
-  for(const a of alerts){
-    const [id,,truth] = a;
-    const [choice,conf] = r[id];
-    const fin = final(choice,conf);
-    const cat = category(truth,fin);
-    if(cat==='ok') correct++;
-    else if(cat==='misroute') misroute++;
-    else if(cat==='missed') missed++;
-    else if(cat==='unnec') unnec++;
-    if(fin==='review') human++;
-  }
-  const n = alerts.length || 1;
-  return {acc:Math.round(100*correct/n), misroute, missed, unnec, human, n:alerts.length};
-}
-
-function renderBoard(alerts){
-  const board = document.getElementById('board');
-  board.innerHTML = SYS.map(([sys,name])=>{
-    const s = scoreSystem(sys, alerts);
-    return `<div class="card">
-      <h3 style="color:${SYSCOLOR[sys]}">${name}</h3>
-      <div class="acc">${s.acc}%</div>
-      <div class="acclbl">got it right (${s.n} alerts)</div>
-      <div class="stat bad"><span class="k">wrong team</span><span class="v">${s.misroute}</span></div>
-      <div class="stat danger"><span class="k">buried (missed a human)</span><span class="v">${s.missed}</span></div>
-      <div class="stat"><span class="k">sent to a human</span><span class="v">${s.human}</span></div>
-    </div>`;
-  }).join('');
-}
-
-const TRUTHCOLOR = {soc:'var(--blue)', cloud:'var(--green)', prodsec:'var(--accent)', review:'var(--ink)'};
-const TRUTHLBL = {soc:'SOC', cloud:'CLOUD', prodsec:'PRODSEC', review:'NEEDS A HUMAN'};
-
-function renderList(alerts){
-  document.getElementById('count').textContent = alerts.length + ' shown';
-  const list = document.getElementById('list');
-  list.innerHTML = alerts.map(a=>{
-    const [id,text,truth,scenario] = a;
-    const rows = SYS.map(([sys,name])=>{
-      const [choice,conf] = D.res[state.cond][sys][id];
-      const fin = final(choice,conf);
-      const cat = category(truth,fin);
-      const tag = CATTAG[cat] ? `<span class="tag">${CATTAG[cat]}</span>` : '';
-      const confTxt = conf===null ? '—' : conf.toFixed(2);
-      return `<div class="sysrow">
-        <span class="sys" style="color:${SYSCOLOR[sys]}">${name}</span>
-        <span><span class="decision" style="color:${CATCOLOR[cat]}">${labelFor(fin)}</span>${tag}</span>
-        <span class="conf">conf ${confTxt}</span>
-      </div>`;
-    }).join('');
-    const star = scenario ? `<span class="star">★ ${scenario.replace('_',' ')}</span>` : '';
-    return `<div class="alert">
-      <span class="truth" style="color:${TRUTHCOLOR[truth]}">${TRUTHLBL[truth]}</span>${star}
-      <p class="txt">${text.replace(/</g,'&lt;')}</p>
-      ${rows}
-    </div>`;
-  }).join('');
-}
+let V = 10000;
 
 function render(){
-  const alerts = filteredAlerts();
-  renderBoard(alerts);
-  renderList(alerts);
-  document.getElementById('condhint').textContent = CONDHINT[state.cond];
-  document.getElementById('gateval').textContent = state.gate.toFixed(2);
+  document.getElementById('volN').textContent = V.toLocaleString('en-US');
+  const cards = SYS.map(s=>{
+    const costDay = V/1000 * s.c;
+    const costYr  = costDay * 365;
+    const clearH  = V * s.l / 3600;
+    const streams = Math.max(1, Math.ceil(V * s.l / 86400));
+    const cantKeep = clearH > 24;
+    return `<div class="card">
+      <h3 style="color:${s.color}">${s.name}</h3>
+      <p class="lbl">cost / year</p>
+      <div class="big">${costYr < 1 ? '$0' : usd(costYr)}</div>
+      <div class="row"><span class="k">per day</span><span class="v">${costDay < 0.01 ? '$0' : usdDay(costDay)}</span></div>
+      <div class="row"><span class="k">clear a day</span><span class="v ${cantKeep?'warn':''}">${dur(clearH)}${cantKeep?' *':''}</span></div>
+      <div class="row"><span class="k">streams to keep up</span><span class="v ${streams>1?'warn':''}">${streams}</span></div>
+    </div>`;
+  }).join('');
+  document.getElementById('cards').innerHTML = cards;
+
+  // verdict: Gemini vs JEV, at this volume
+  const jev = SYS.find(s=>s.key==='jev'), gem = SYS.find(s=>s.key==='gemini');
+  const jYr = V/1000*jev.c*365, gYr = V/1000*gem.c*365;
+  const costX = (gem.c/jev.c).toFixed(0), latX = (gem.l/jev.l).toFixed(0);
+  const extra = usd(gYr - jYr);
+  document.getElementById('verdict').innerHTML =
+    `At <b>${V.toLocaleString('en-US')}/day</b>, Gemini runs <b>${usd(gYr)}/yr</b> vs JEV's <b>${usd(jYr)}/yr</b> — about <b>${costX}× the cost</b> (${extra}/yr more) and <b>${latX}× the wait</b>, for a ~5-point accuracy difference. That's the trade the title asks about.`;
 }
 
-document.getElementById('cond').addEventListener('click', e=>{
-  const b = e.target.closest('button'); if(!b) return;
-  state.cond = b.dataset.cond;
-  [...e.currentTarget.children].forEach(c=>c.setAttribute('aria-pressed', c===b));
+document.getElementById('vol').addEventListener('input', e=>{
+  V = parseInt(e.target.value,10);
+  document.querySelectorAll('#chips .chip').forEach(c=>c.setAttribute('aria-pressed', parseInt(c.dataset.v,10)===V));
   render();
 });
-document.getElementById('filter').addEventListener('click', e=>{
-  const b = e.target.closest('button'); if(!b) return;
-  state.filter = b.dataset.f;
-  [...e.currentTarget.children].forEach(c=>c.setAttribute('aria-pressed', c===b));
-  render();
-});
-document.getElementById('gate').addEventListener('input', e=>{
-  state.gate = parseFloat(e.target.value);
+document.getElementById('chips').addEventListener('click', e=>{
+  const b = e.target.closest('.chip'); if(!b) return;
+  V = parseInt(b.dataset.v,10);
+  document.getElementById('vol').value = V;
+  document.querySelectorAll('#chips .chip').forEach(c=>c.setAttribute('aria-pressed', c===b));
   render();
 });
 render();
